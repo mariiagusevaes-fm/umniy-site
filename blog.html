@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блог Forma Studio — советы по разработке сайтов, SEO и ИИ для бизнеса</title>
+<meta name="description" content="Практические статьи о разработке сайтов, SEO-продвижении и ИИ-инструментах для малого бизнеса. Опыт студии Forma с 2015 года.">
+<meta name="keywords" content="разработка сайтов блог, SEO для малого бизнеса, как выбрать студию для сайта, ИИ в веб-разработке, сайт для бизнеса советы">
+<link rel="canonical" href="https://umniy-site.ru/blog">
+<meta property="og:title" content="Блог Forma Studio — разработка сайтов, SEO и ИИ">
+<meta property="og:description" content="Практические статьи о разработке сайтов и продвижении для малого бизнеса.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://umniy-site.ru/blog">
+<meta property="og:image" content="https://umniy-site.ru/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#F7F5F2;--bg-alt:#EFEDE9;--ink:#1A1714;--ink-mid:#5C5650;--ink-light:#9A9590;--gold:#C8A96E;--rule:rgba(26,23,20,0.10);--rule-mid:rgba(26,23,20,0.18);--white:#FFFFFF;--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--sans);cursor:pointer}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,242,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--serif);font-size:20px;font-weight:500}
+.nav-logo em{font-style:italic;color:var(--gold)}
+.nav-back{font-size:13px;color:var(--ink-light);transition:color .2s}
+.nav-back:hover{color:var(--ink)}
+.nav-cta{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:10px 22px;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.nav-cta:hover{background:#2e2b27}
+
+.page-hero{padding:120px 48px 72px;max-width:1200px;margin:0 auto;width:100%}
+.page-hero-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.page-hero-label::before{content:'';display:inline-block;width:20px;height:1px;background:var(--gold)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,68px);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+.page-hero h1 em{font-style:italic;color:var(--gold)}
+.page-hero p{font-size:17px;color:var(--ink-mid);max-width:540px;line-height:1.7}
+
+.blog-grid{max-width:1200px;margin:0 auto;padding:48px 48px 96px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid var(--rule)}
+
+.blog-card{display:flex;flex-direction:column;border-bottom:1px solid var(--rule);padding-bottom:32px}
+.blog-tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+.blog-card h2{font-family:var(--serif);font-size:22px;font-weight:500;line-height:1.3;margin-bottom:12px}
+.blog-card h2 a{transition:color .2s}
+.blog-card h2 a:hover{color:var(--gold)}
+.blog-card p{font-size:14px;color:var(--ink-mid);line-height:1.65;margin-bottom:16px;flex:1}
+.blog-meta{font-size:12px;color:var(--ink-light);margin-bottom:16px}
+.blog-read{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:.03em;display:inline-flex;align-items:center;gap:6px;transition:color .2s}
+.blog-read:hover{color:var(--gold)}
+
+/* ARTICLE PAGE */
+.article-wrap{max-width:1000px;margin:0 auto;padding:108px 48px 96px}
+.article-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;display:block}
+.article-title{font-family:var(--serif);font-size:clamp(32px,4.5vw,54px);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px}
+.article-meta{font-size:13px;color:var(--ink-light);margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--rule)}
+.article-body h2{font-family:var(--serif);font-size:28px;font-weight:500;margin:48px 0 16px;line-height:1.25}
+.article-body h3{font-family:var(--serif);font-size:21px;font-weight:500;margin:32px 0 12px}
+.article-body p{font-size:16px;color:var(--ink-mid);line-height:1.8;margin-bottom:20px}
+.article-body ul,.article-body ol{padding-left:24px;margin-bottom:20px}
+.article-body li{font-size:16px;color:var(--ink-mid);line-height:1.7;margin-bottom:8px}
+.article-body strong{color:var(--ink);font-weight:600}
+.article-body .highlight{background:#fff8ed;border-left:3px solid var(--gold);padding:20px 24px;border-radius:0 8px 8px 0;margin:32px 0}
+.article-body .highlight p{margin-bottom:0;color:var(--ink-mid)}
+
+.article-cta{margin-top:64px;background:var(--ink);border-radius:12px;padding:48px;text-align:center}
+.article-cta h3{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--bg);margin-bottom:10px}
+.article-cta h3 em{font-style:italic;color:var(--gold)}
+.article-cta p{font-size:15px;color:rgba(247,245,242,.6);margin-bottom:28px}
+.btn-gold{background:var(--gold);color:var(--ink);border:none;border-radius:4px;padding:14px 32px;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:opacity .2s}
+.btn-gold:hover{opacity:.85}
+
+.footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
+.footer-inner{max-width:1200px;margin:0 auto;padding:36px 48px;display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:var(--serif);font-size:18px;font-weight:500}
+.footer-logo em{font-style:italic;color:var(--gold)}
+.footer-copy{font-size:13px;color:var(--ink-light);text-align:right;line-height:1.6}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:500;background:rgba(26,23,20,.55);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--white);border-radius:16px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;padding:44px 40px;position:relative;animation:mIn .28s ease}
+@keyframes mIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;background:var(--bg-alt);border:none;font-size:16px;color:var(--ink-mid);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.modal-title{font-family:var(--serif);font-size:26px;font-weight:400;margin-bottom:6px}
+.modal-sub{font-size:14px;color:var(--ink-light);margin-bottom:24px}
+.form-field{margin-bottom:15px}
+.form-field label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);font-weight:500;margin-bottom:7px}
+.form-field input,.form-field textarea{width:100%;background:var(--bg);border:1px solid var(--rule-mid);border-radius:4px;padding:12px 15px;color:var(--ink);font-size:15px;font-family:var(--sans);outline:none;transition:border-color .2s}
+.form-field input:focus,.form-field textarea:focus{border-color:var(--gold)}
+.form-field textarea{min-height:72px;resize:vertical}
+.form-submit{width:100%;background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:15px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:6px}
+.form-submit:hover{background:#2e2b27}
+.form-legal{font-size:12px;color:var(--ink-light);margin-top:12px;text-align:center;line-height:1.5}
+.modal-div{display:flex;align-items:center;gap:10px;margin:16px 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light)}
+.modal-div::before,.modal-div::after{content:'';flex:1;height:1px;background:var(--rule)}
+.msg-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.msg-btn{display:flex;flex-direction:column;align-items:center;gap:5px;padding:11px 6px;border-radius:9px;border:1px solid var(--rule-mid);color:var(--ink);transition:border-color .18s,background .18s;text-decoration:none}
+.msg-btn:hover{border-color:var(--ink-mid);background:var(--bg)}
+.msg-icon{font-size:20px}
+.msg-label{font-size:11px;color:var(--ink-mid)}
+
+@media(max-width:768px){
+  .nav-inner{padding:0 20px}
+  .page-hero{padding:100px 20px 48px}
+  .blog-grid{padding:32px 20px 64px;grid-template-columns:1fr}
+  .article-wrap{padding:100px 20px 64px}
+  .footer-inner{flex-direction:column;gap:14px;text-align:center;padding:28px 20px}
+  .footer-copy{text-align:center}
+  .article-cta{padding:32px 20px}
+  .modal{padding:32px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Forma<em>.</em></a>
+    <a href="index.html" class="nav-back">← На главную</a>
+    <button class="nav-cta" onclick="openModal()">Обсудить проект</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-label">Блог Forma Studio</div>
+  <h1>Практика, а не<br><em>теория</em></h1>
+  <p>Пишем о том, с чем работаем каждый день — сайты, SEO, ИИ и мобильные приложения для малого бизнеса.</p>
+</div>
+
+<div class="blog-grid">
+
+  <div class="blog-card">
+    <span class="blog-tag">SEO</span>
+    <div class="blog-meta">25 июня 2026 · 7 мин</div>
+    <h2><a href="blog-kak-vybrat-studiyu.html">Как выбрать студию для разработки сайта: 8 вопросов, которые нужно задать</a></h2>
+    <p>Большинство студий покажут красивые кейсы и назовут разумную цену. Но 90% разочарований происходит не от дизайна, а от того, что никто не спросил правильные вопросы до начала работы.</p>
+    <a href="blog-kak-vybrat-studiyu.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Разработка</span>
+    <div class="blog-meta">20 июня 2026 · 6 мин</div>
+    <h2><a href="blog-sajt-ili-socset.html">Сайт или соцсети: что выбрать малому бизнесу в 2026 году</a></h2>
+    <p>«Зачем сайт, если у меня есть Instagram и Telegram?» — один из самых частых вопросов. Отвечаем честно: когда соцсетей достаточно, а когда без сайта не обойтись.</p>
+    <a href="blog-sajt-ili-socset.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">ИИ</span>
+    <div class="blog-meta">15 июня 2026 · 5 мин</div>
+    <h2><a href="blog-ii-v-razrabotke.html">Как мы используем нейросети в разработке сайтов — и почему это выгодно клиенту</a></h2>
+    <p>ИИ в разработке — это не замена специалиста, а ускорение рутины. Рассказываем конкретно: что мы генерируем с помощью нейросетей и где всегда работает человек.</p>
+    <a href="blog-ii-v-razrabotke.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">SEO · Бухгалтерия</span>
+    <div class="blog-meta">24 июня 2026 · 7 мин</div>
+    <h2><a href="blog-pochemu-sajt-bukhgaltera.html">Почему сайт бухгалтера не приносит клиентов — и как это исправить</a></h2>
+    <p>7 реальных причин, по которым бухгалтерский сайт не даёт заявок — и конкретные решения для каждой. От SEO до мобильной версии.</p>
+    <a href="blog-pochemu-sajt-bukhgaltera.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Разработка · Психология</span>
+    <div class="blog-meta">23 июня 2026 · 6 мин</div>
+    <h2><a href="blog-skolko-stoit-sajt-psikhologa.html">Сколько стоит сайт для психолога в 2026 году — честный разбор цен</a></h2>
+    <p>От конструктора за 0 ₽ до студии за 150 000 ₽. Что входит в каждый вариант и на чём точно не стоит экономить.</p>
+    <a href="blog-skolko-stoit-sajt-psikhologa.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Маркетинг · Фитнес</span>
+    <div class="blog-meta">22 июня 2026 · 6 мин</div>
+    <h2><a href="blog-kak-trener-poluchaet-klientov.html">Как фитнес-тренеру получать клиентов без рекламного бюджета в 2026</a></h2>
+    <p>5 рабочих способов привлечь клиентов без затрат на таргет. SEO, личный бренд, Telegram и коллаборации.</p>
+    <a href="blog-kak-trener-poluchaet-klientov.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Разработка · Beauty</span>
+    <div class="blog-meta">21 июня 2026 · 5 мин</div>
+    <h2><a href="blog-chto-dolzhno-byt-na-sajte-salona.html">Что должно быть на сайте салона красоты: чек-лист из 12 пунктов</a></h2>
+    <p>Проверьте свой сайт по этому списку. Если хотя бы один пункт не выполнен — вы теряете записи прямо сейчас.</p>
+    <a href="blog-chto-dolzhno-byt-na-sajte-salona.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">SEO · Инструменты</span>
+    <div class="blog-meta">19 июня 2026 · 8 мин</div>
+    <h2><a href="blog-kak-proverit-seo-sajta.html">Как проверить SEO своего сайта самостоятельно — пошаговая инструкция</a></h2>
+    <p>Яндекс.Вебмастер, Google Search Console, PageSpeed — четыре бесплатных инструмента и что конкретно в них смотреть.</p>
+    <a href="blog-kak-proverit-seo-sajta.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">SEO · Техническое</span>
+    <div class="blog-meta">18 июня 2026 · 7 мин</div>
+    <h2><a href="blog-pochemu-sajt-ne-indeksiruetsya.html">Почему сайт не индексируется в Яндексе и Google — 7 причин</a></h2>
+    <p>Запустили сайт, прошло несколько недель, но в поиске его нет. Разбираем причины по порядку — от простых к сложным.</p>
+    <a href="blog-pochemu-sajt-ne-indeksiruetsya.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Разработка · Приложения</span>
+    <div class="blog-meta">17 июня 2026 · 7 мин</div>
+    <h2><a href="blog-skolko-stoit-mobilnoe-prilozhenie.html">Сколько стоит мобильное приложение в 2026 году — реальные цены</a></h2>
+    <p>От конструктора за 0 ₽ до агентства за миллион. Что конкретно влияет на цену и где нельзя экономить.</p>
+    <a href="blog-skolko-stoit-mobilnoe-prilozhenie.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Разработка · Стратегия</span>
+    <div class="blog-meta">16 июня 2026 · 6 мин</div>
+    <h2><a href="blog-lending-ili-mnogostranchnyj.html">Лендинг или многостраничный сайт — что выбрать для бизнеса</a></h2>
+    <p>Конкретные примеры по нишам: когда достаточно лендинга, когда нужен полноценный сайт и что такое гибридный вариант.</p>
+    <a href="blog-lending-ili-mnogostranchnyj.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Приложения · Практика</span>
+    <div class="blog-meta">13 июня 2026 · 9 мин</div>
+    <h2><a href="blog-publikaciya-app-store-iz-rossii.html">Как опубликовать приложение в App Store и Google Play из России в 2026 году</a></h2>
+    <p>Пошаговое руководство из реального опыта — у нас два опубликованных приложения. Все актуальные ограничения и как их обойти.</p>
+    <a href="blog-publikaciya-app-store-iz-rossii.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">Разработка · Бюджет</span>
+    <div class="blog-meta">12 июня 2026 · 7 мин</div>
+    <h2><a href="blog-skolko-stoit-sajt-razbor.html">Сколько стоит сайт под ключ — честный разбор по статьям затрат</a></h2>
+    <p>Дизайн, тексты, разработка, SEO, хостинг, поддержка — реальные цифры по каждой статье. Почему «сайт за 20 000 ₽» — не сайт под ключ.</p>
+    <a href="blog-skolko-stoit-sajt-razbor.html" class="blog-read">Читать статью →</a>
+  </div>
+
+  <div class="blog-card">
+    <span class="blog-tag">SEO · Обучение</span>
+    <div class="blog-meta">11 июня 2026 · 6 мин</div>
+    <h2><a href="blog-tehnicheskoe-seo-vs-kontentseo.html">Чем техническое SEO отличается от контентного — и что важнее</a></h2>
+    <p>Простым языком: что такое техническое SEO, что такое контентное, почему без одного не работает другое и с чего начинать.</p>
+    <a href="blog-tehnicheskoe-seo-vs-kontentseo.html" class="blog-read">Читать статью →</a>
+  </div>
+
+</div>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Forma<em>.</em></a>
+    <p class="footer-copy">© 2026 ООО «АКБ» · ИНН 7743458940 · ОГРН 1247700690027<br>125413, г. Москва, ул. Фестивальная, д. 46, к. 1, оф. 77</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h2 class="modal-title">Обсудим проект</h2>
+    <p class="modal-sub">Оставьте контакт — ответим в течение 2 часов</p>
+    <form id="mf" action="https://formspree.io/f/mbdvdyjw" method="POST">
+      <div class="form-field"><label>Имя</label><input type="text" name="name" placeholder="Александр" required></div>
+      <div class="form-field"><label>Телефон или Telegram</label><input type="text" name="contact" placeholder="+7 (___) ___-__-__ или @username" required></div>
+      <div class="form-field"><label>Коротко о задаче <span style="color:var(--ink-light);font-weight:400">(необязательно)</span></label><textarea name="message" placeholder="Новый сайт, редизайн, приложение, SEO..."></textarea></div>
+      <button type="submit" class="form-submit" id="mfsub">Отправить заявку →</button>
+      <div id="mfsuc" style="display:none;margin-top:14px;padding:14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:14px;color:#166534">✓ Заявка отправлена!</div>
+      <div id="mferr" style="display:none;margin-top:14px;padding:14px;background:#fff1f2;border:1px solid #fecdd3;border-radius:8px;font-size:14px;color:#9f1239">Ошибка. Напишите: info@umniy-site.ru</div>
+      <p class="form-legal">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" style="text-decoration:underline">политикой конфиденциальности</a></p>
+    </form>
+    <div class="modal-div">или напишите сразу</div>
+    <div class="msg-row">
+      <a href="https://wa.me/79167347616" target="_blank" class="msg-btn"><span class="msg-icon">💬</span><span class="msg-label">WhatsApp</span></a>
+      <a href="https://t.me/infoaccount1" target="_blank" class="msg-btn"><span class="msg-icon">✈️</span><span class="msg-label">Telegram</span></a>
+      <a href="https://max.ru/u/f9LHodD0cOJMljii30kmK_I7b7kl1EVYlgeqFakC1pg5P0mLhhb8MbMosCQ" target="_blank" class="msg-btn"><span class="msg-icon">💙</span><span class="msg-label">Max</span></a>
+      <a href="mailto:info@umniy-site.ru" class="msg-btn"><span class="msg-icon">✉️</span><span class="msg-label">Email</span></a>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(){document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
+function closeModalOutside(e){if(e.target===document.getElementById('modal'))closeModal()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()})
+const mf=document.getElementById('mf');
+if(mf){mf.addEventListener('submit',async e=>{
+  e.preventDefault();const sb=document.getElementById('mfsub');sb.textContent='Отправляем...';sb.disabled=true;
+  try{const r=await fetch(mf.action,{method:'POST',body:new FormData(mf),headers:{'Accept':'application/json'}});
+  if(r.ok){document.getElementById('mfsuc').style.display='block';mf.reset();sb.textContent='Отправлено ✓'}
+  else throw new Error()}catch{document.getElementById('mferr').style.display='block';sb.textContent='Отправить заявку →';sb.disabled=false}
+})}
+</script>
+
+<!-- Yandex.Metrika -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=110121281','ym');
+ym(110121281,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110121281" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+</body>
+</html>

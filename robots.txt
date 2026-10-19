@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+
+Sitemap: https://umniy-site.ru/sitemap.xml
+
+Host: umniy-site.ru
