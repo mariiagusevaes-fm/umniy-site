@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сайт для языковой школы в Испании — разработка с SEO — Forma Studio · Барселона</title>
+<title>Сайт для языковой школы в Испании — Forma Studio</title>
 <meta name="description" content="Разработка сайта для языковой школы и курсов иностранных языков в Испании. SEO на русском и испанском, онлайн-запись, запуск за 7–21 день.">
 <meta name="keywords" content="сайт языковой школы Испания, разработка сайта курсы языков Испания, сайт для школы испанского языка, сайт онлайн курсы языков Барселона, diseño web academia idiomas España">
 <link rel="canonical" href="https://umniy-site.ru/shkola-inostrannyh-yazykov">
@@ -22,58 +22,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="/niche.css">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#F7F5F2;--bg-alt:#EFEDE9;--ink:#1A1714;--ink-mid:#5C5650;--ink-light:#9A9590;--gold:#C8A96E;--rule:rgba(26,23,20,0.10);--rule-mid:rgba(26,23,20,0.18);--white:#FFFFFF;--serif:"Playfair Display",Georgia,serif;--sans:"Inter",system-ui,sans-serif}
-html{scroll-behavior:smooth;overflow-x:hidden;font-size:16px}
 body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
-a{color:inherit;text-decoration:none}
-button{font-family:var(--sans);cursor:pointer}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,242,0.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--serif);font-size:20px;font-weight:500}
-.nav-logo em{font-style:italic;color:var(--gold)}
-.nav-back{font-size:13px;color:var(--ink-light);transition:color .2s}
-.nav-back:hover{color:var(--ink)}
 .nav-cta{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:10px 22px;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s;cursor:pointer;white-space:nowrap}
-.nav-cta:hover{background:#2e2b27}
 .hero{padding-top:68px;min-height:86vh;display:flex;flex-direction:column}
 .hero-top{max-width:1200px;margin:0 auto;padding:56px 48px 0;width:100%;display:flex;justify-content:space-between;align-items:flex-start}
-.hero-eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);font-weight:500}
 .hero-tag{display:inline-block;background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.3);color:var(--gold);border-radius:100px;padding:5px 16px;font-size:12px;font-weight:600;letter-spacing:.06em}
 .hero-headline-wrap{max-width:1200px;margin:0 auto;padding:40px 48px 0;width:100%}
 .hero-h1{font-family:var(--serif);font-size:clamp(42px,6vw,86px);font-weight:400;line-height:1.0;letter-spacing:-.02em}
-.hero-h1 em{font-style:italic;color:var(--gold)}
-.hero-seo-sub{font-size:13px;color:var(--ink-light);margin-top:10px;line-height:1.5}
 .hero-lower{max-width:1200px;margin:0 auto;padding:44px 48px 72px;width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
 .hero-sub{font-size:17px;line-height:1.75;color:var(--ink-mid);max-width:560px;font-weight:300}
-.hero-sub strong{font-weight:600;color:var(--ink)}
-.hero-actions{display:flex;flex-direction:column;align-items:flex-end;gap:14px;flex-shrink:0}
 .btn-primary{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:16px 32px;font-size:14px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s,transform .15s;white-space:nowrap;cursor:pointer}
-.btn-primary:hover{background:#2e2b27;transform:translateY(-2px)}
 .hero-note{font-size:12px;color:var(--ink-light);text-align:right}
-.stats-row{max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .stat{padding:26px 16px;border-right:1px solid var(--rule)}
-.stat:first-child{padding-left:0}
-.stat:last-child{border-right:none}
 .stat-num{font-family:var(--serif);font-size:38px;font-weight:400;line-height:1;letter-spacing:-.02em;margin-bottom:5px}
-.stat-label{font-size:13px;color:var(--ink-light);line-height:1.4}
 .sec{padding:80px 0}
-.sec-alt{background:var(--bg-alt)}
-.sec-inner{max-width:1200px;margin:0 auto;padding:0 48px}
-.sec-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .sec-label::before{content:'';display:inline-block;width:20px;height:1px;background:var(--gold)}
 .sec-title{font-family:var(--serif);font-size:clamp(28px,3.8vw,48px);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
-.sec-title em{font-style:italic;color:var(--gold)}
 .sec-sub{font-size:16px;color:var(--ink-mid);max-width:700px;line-height:1.7;margin-bottom:48px}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule)}
 .w-item{padding:40px 36px 40px 0;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.w-item:nth-child(3n){border-right:none;padding-right:0}
 .w-item:nth-child(3n+2),.w-item:nth-child(3n+3){padding-left:36px}
-.w-item:nth-last-child(-n+3){border-bottom:none}
-.w-icon{font-size:28px;margin-bottom:14px}
-.w-item h3{font-family:var(--serif);font-size:18px;font-weight:500;margin-bottom:9px;line-height:1.3}
-.w-item p{font-size:14px;color:var(--ink-mid);line-height:1.65}
+.insight{background:var(--white);border:1px solid var(--rule);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:28px 32px;margin:40px 0}
+.insight-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+.insight p{font-size:16px;color:var(--ink-mid);line-height:1.8}
+.insight strong{color:var(--ink)}
+.mistakes-list{display:flex;flex-direction:column;gap:16px;margin-top:32px}
+.mistake-item{display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:10px;align-items:flex-start}
+.mistake-num{font-family:var(--serif);font-size:32px;font-weight:400;color:rgba(200,169,110,0.4);line-height:1;flex-shrink:0;width:40px}
+.mistake-body h3{font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:6px}
+.mistake-body p{font-size:14px;color:var(--ink-mid);line-height:1.65}
+.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:32px}
+.check-item{display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px}
+.check-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.check-item h4{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.check-item p{font-size:13px;color:var(--ink-mid);line-height:1.5}
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.article-card{background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:24px;transition:border-color .2s}
+.article-card:hover{border-color:var(--gold)}
+.article-card-tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block}
+.article-card h3{font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px}
+.article-card p{font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px}
+.article-card a{font-size:13px;font-weight:600;color:var(--gold)}
 .process-list{display:flex;flex-direction:column}
 .p-step{display:grid;grid-template-columns:180px 1fr auto;border-top:1px solid var(--rule);padding:36px 0;gap:32px;align-items:start}
 .p-step:last-child{border-bottom:1px solid var(--rule)}
@@ -84,34 +76,21 @@ button{font-family:var(--sans);cursor:pointer}
 .p-dur{font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px}
 .p-dur strong{display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink);letter-spacing:-.01em}
 .faq-list{display:flex;flex-direction:column;max-width:780px}
-.faq-item{border-top:1px solid var(--rule)}
-.faq-item:last-child{border-bottom:1px solid var(--rule)}
 .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;background:transparent;border:none;color:var(--ink);text-align:left;cursor:pointer}
 .faq-question{font-family:var(--serif);font-size:18px;font-weight:400;line-height:1.3}
 .faq-icon{width:30px;height:30px;border:1px solid var(--rule-mid);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--ink-mid);flex-shrink:0;transition:background .2s,border-color .2s,transform .3s}
-.faq-item.open .faq-icon{background:var(--ink);border-color:var(--ink);color:var(--bg);transform:rotate(45deg)}
-.faq-body{max-height:0;overflow:hidden;transition:max-height .38s ease}
 .faq-item.open .faq-body{max-height:320px}
 .faq-bi{padding:0 0 24px}
 .faq-bi p{font-size:15px;color:var(--ink-mid);line-height:1.75}
-.cta-banner{background:var(--ink);padding:72px 48px;text-align:center}
 .cta-banner h2{font-family:var(--serif);font-size:clamp(24px,3.5vw,44px);font-weight:400;color:var(--bg);letter-spacing:-.02em;margin-bottom:12px}
-.cta-banner h2 em{font-style:italic;color:var(--gold)}
 .cta-banner p{font-size:16px;color:rgba(247,245,242,.6);margin-bottom:32px}
 .btn-gold{background:var(--gold);color:var(--ink);border:none;border-radius:4px;padding:16px 36px;font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:opacity .2s,transform .15s}
-.btn-gold:hover{opacity:.85;transform:translateY(-2px)}
 .crosslinks{background:var(--bg-alt);border-top:1px solid var(--rule);padding:32px 48px}
 .crosslinks-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .crosslinks-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);font-weight:500;margin-right:8px}
 .crosslink-btn{display:inline-flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--rule-mid);border-radius:100px;padding:7px 16px;font-size:13px;font-weight:500;color:var(--ink-mid);text-decoration:none;transition:border-color .18s,color .18s,background .18s}
 .crosslink-btn:hover{border-color:var(--gold);color:var(--ink);background:#fdf8f0}
-.footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
 .footer-inner{max-width:1200px;margin:0 auto;padding:32px 48px;display:flex;justify-content:space-between;align-items:center}
-.footer-logo{font-family:var(--serif);font-size:18px;font-weight:500}
-.footer-logo em{font-style:italic;color:var(--gold)}
-.footer-copy{font-size:13px;color:var(--ink-light);text-align:right;line-height:1.6}
-.modal-overlay{display:none;position:fixed;inset:0;z-index:500;background:rgba(26,23,20,.55);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px}
-.modal-overlay.open{display:flex}
 .modal{background:var(--white);border-radius:16px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;padding:40px 36px;position:relative;animation:mIn .25s ease}
 @keyframes mIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
 .modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:var(--bg-alt);border:none;font-size:15px;color:var(--ink-mid);display:flex;align-items:center;justify-content:center;cursor:pointer}
@@ -120,17 +99,13 @@ button{font-family:var(--sans);cursor:pointer}
 .form-field{margin-bottom:14px}
 .form-field label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);font-weight:500;margin-bottom:6px}
 .form-field input,.form-field textarea{width:100%;background:var(--bg);border:1px solid var(--rule-mid);border-radius:4px;padding:12px 14px;color:var(--ink);font-size:15px;font-family:var(--sans);outline:none;transition:border-color .2s}
-.form-field input:focus,.form-field textarea:focus{border-color:var(--gold)}
 .form-field textarea{resize:vertical}
 .form-submit{width:100%;background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:14px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:6px}
-.form-submit:hover{background:#2e2b27}
 .modal-div{display:flex;align-items:center;gap:10px;margin:14px 0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light)}
 .modal-div::before,.modal-div::after{content:'';flex:1;height:1px;background:var(--rule)}
 .msg-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .msg-btn{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 6px;border-radius:8px;border:1px solid var(--rule-mid);color:var(--ink);transition:border-color .18s,background .18s;text-decoration:none}
 .msg-btn:hover{border-color:var(--gold);background:var(--bg)}
-.msg-icon{font-size:20px}
-.msg-label{font-size:11px;color:var(--ink-mid)}
 @media(max-width:1024px){
   .why-grid{grid-template-columns:repeat(2,1fr)}
   .w-item:nth-child(2n){border-right:none;padding-right:0}
@@ -143,8 +118,6 @@ button{font-family:var(--sans);cursor:pointer}
   .stat:nth-child(2){border-right:none}
   .stat:nth-child(3){border-top:1px solid var(--rule);padding-left:0}
   .stat:nth-child(4){border-top:1px solid var(--rule);border-right:none}
-}
-@media(max-width:768px){
   .nav-inner{padding:0 20px}
   .nav-cta{padding:8px 14px;font-size:12px}
   .hero-top{flex-direction:column;gap:12px;padding:32px 20px 0}
@@ -164,21 +137,20 @@ button{font-family:var(--sans);cursor:pointer}
   .footer-inner{flex-direction:column;gap:12px;text-align:center;padding:24px 20px}
   .footer-copy{text-align:center}
   .modal{padding:28px 18px}
-}
-@media(max-width:390px){
   .hero-h1{font-size:34px}
   .sec-title{font-size:24px}
   .stat-num{font-size:28px}
   .nav-cta{display:none}
   .cta-banner{padding:36px 16px}
-}
+  .checklist{grid-template-columns:1fr}
+  .articles-grid{grid-template-columns:1fr}
 </style>
 </head>
 <body>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Forma<em>.</em></a>
-    <a href="ispaniya.html" class="nav-back">← Испания</a>
+    <a href="/" class="nav-logo">Forma<em>.</em></a>
+    <a href="/ispaniya" class="nav-back">← Испания</a>
     <button class="nav-cta" onclick="openModal()">Обсудить проект</button>
   </div>
 </nav>
@@ -204,6 +176,132 @@ button{font-family:var(--sans);cursor:pointer}
 </div>
 <section class="sec">
   <div class="sec-inner">
+    <div class="sec-label">О рынке</div>
+    <h2 class="sec-title">Почему языковой школе<br><em>в Испании нужен сайт</em></h2>
+    <p class="sec-sub">Студент выбирает курс в Google задолго до того, как дойдёт до двери школы — на двух разных языках сразу.</p>
+    <div class="insight">
+      <div class="insight-label">Из нашего наблюдения</div>
+      <p>Запросы «курсы испанского в Барселоне для русских», «academia de inglés Barcelona», «clases de ruso online» вводят каждый день — причём это два разных, непересекающихся потока студентов. Большинство языковых школ в Испании закрывают только один из этих рынков, теряя вторую половину спроса. <strong>Школа с сайтом на двух языках и правильным SEO получает оба потока одновременно.</strong></p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px">
+      <div style="padding:28px;background:var(--bg-alt);border-radius:12px;border:1px solid var(--rule)">
+        <div style="font-family:var(--serif);font-size:36px;color:var(--gold);margin-bottom:8px">🌍</div>
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:8px">Два рынка одновременно</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.6">Местные испанцы ищут курсы английского и русского, эмигранты — курсы испанского. Школа без двуязычного сайта работает только с половиной потенциальной аудитории.</p>
+      </div>
+      <div style="padding:28px;background:var(--bg-alt);border-radius:12px;border:1px solid var(--rule)">
+        <div style="font-family:var(--serif);font-size:36px;color:var(--gold);margin-bottom:8px">🔁</div>
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:8px">Повторяемый спрос каждый семестр</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.6">Новые группы набираются регулярно — сентябрь, январь, лето. Сайт с SEO работает на каждый набор, а не только на разовый поток клиентов.</p>
+      </div>
+      <div style="padding:28px;background:var(--bg-alt);border-radius:12px;border:1px solid var(--rule)">
+        <div style="font-family:var(--serif);font-size:36px;color:var(--gold);margin-bottom:8px">💻</div>
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:8px">Онлайн-формат расширяет географию</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.6">Если школа предлагает онлайн-занятия, аудитория не ограничена городом — можно набирать студентов по всей Испании и за её пределами.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt">
+  <div class="sec-inner">
+    <div class="sec-label">Типичные ошибки</div>
+    <h2 class="sec-title">Почему сайты языковых школ<br><em>не приносят студентов</em></h2>
+    <p class="sec-sub">Одни и те же ошибки снова и снова. Вот почему сайт есть, а записи на курс нет.</p>
+    <div class="mistakes-list">
+      <div class="mistake-item">
+        <div class="mistake-num">01</div>
+        <div class="mistake-body">
+          <h3>Сайт только на одном языке</h3>
+          <p>Школа с сайтом только на русском или только на испанском автоматически теряет половину потенциальной аудитории — и это самая частая ошибка в нише.</p>
+        </div>
+      </div>
+      <div class="mistake-item">
+        <div class="mistake-num">02</div>
+        <div class="mistake-body">
+          <h3>Нет отдельных страниц под каждый курс</h3>
+          <p>Общая страница «курсы» не ранжируется по конкретным запросам вроде «испанский для начинающих Барселона». Каждый курс должен иметь свою SEO-страницу.</p>
+        </div>
+      </div>
+      <div class="mistake-item">
+        <div class="mistake-num">03</div>
+        <div class="mistake-body">
+          <h3>Нет пробного урока или он спрятан</h3>
+          <p>Пробный урок — главный инструмент конверсии в языковой школе. Если кнопка записи не на первом экране, студент уходит к конкуренту.</p>
+        </div>
+      </div>
+      <div class="mistake-item">
+        <div class="mistake-num">04</div>
+        <div class="mistake-body">
+          <h3>Нет информации о преподавателях</h3>
+          <p>Студент выбирает не просто «школу», а людей, которые будут его учить. Без страницы преподавателей с опытом и методикой сложно внушить доверие.</p>
+        </div>
+      </div>
+      <div class="mistake-item">
+        <div class="mistake-num">05</div>
+        <div class="mistake-body">
+          <h3>Неудобная запись — только по звонку или email</h3>
+          <p>Студенты, особенно молодые, ожидают записаться онлайн за пару кликов. Форма «позвоните нам» снижает конверсию в разы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">Чек-лист</div>
+    <h2 class="sec-title">Что должно быть<br><em>на сайте языковой школы</em></h2>
+    <p class="sec-sub">Структура, которая превращает интерес в запись на пробный урок.</p>
+    <div class="checklist">
+      <div class="check-item">
+        <span class="check-icon">📚</span>
+        <div>
+          <h4>Страница под каждый курс</h4>
+          <p>Уровень, формат, длительность, цена — для каждого курса отдельно и с SEO-текстом.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">📅</span>
+        <div>
+          <h4>Запись на пробный урок онлайн</h4>
+          <p>Главный элемент конверсии — должен быть на видном месте на каждой странице.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">👤</span>
+        <div>
+          <h4>Преподаватели с опытом</h4>
+          <p>Фото, квалификация, методика каждого преподавателя — студент выбирает не только курс, но и человека.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">💰</span>
+        <div>
+          <h4>Прозрачные цены на курсы</h4>
+          <p>Понятная стоимость снимает барьер перед первым обращением.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">💬</span>
+        <div>
+          <h4>WhatsApp и Telegram</h4>
+          <p>Быстрая связь для вопросов о расписании и уровне — без необходимости звонить.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">⭐</span>
+        <div>
+          <h4>Отзывы студентов</h4>
+          <p>Реальные истории успеха — особенно убедительны для тех, кто сомневается в своём уровне перед стартом.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt">
+  <div class="sec-inner">
     <div class="sec-label">Почему Forma Studio</div>
     <h2 class="sec-title">Что отличает<br><em>наш подход</em></h2>
     <div class="why-grid"><div class="w-item"><div class="w-icon">🔍</div><h3>SEO на двух языках</h3><p>Оптимизируем под русскоязычные запросы («курсы испанского в Барселоне для русских») и испаноязычные («academia de inglés Barcelona», «clases de idiomas online»). Два рынка — два потока студентов.</p></div>
@@ -215,20 +313,47 @@ button{font-family:var(--sans);cursor:pointer}
 </div>
   </div>
 </section>
-<section class="sec sec-alt">
+<section class="sec">
   <div class="sec-inner">
     <div class="sec-label">Процесс</div>
     <h2 class="sec-title">Как мы<br><em>работаем</em></h2>
     <div class="process-list"><div class="p-step"><div><div class="p-num">01</div><div class="p-tag">Стратегия</div></div><div><h3>Анализ ниши и аудитории</h3><p>Кто ваши студенты — местные испанцы, эмигранты, онлайн-аудитория? Какие языки и форматы? Строим структуру сайта и SEO-стратегию под конкретную школу.</p></div><div class="p-dur"><strong>1–2</strong> дн.</div></div><div class="p-step"><div><div class="p-num">02</div><div class="p-tag">Контент</div></div><div><h3>Тексты и описания курсов</h3><p>Пишем тексты для каждого курса на нужных языках. SEO-оптимизация под запросы вашей аудитории. Страница «О школе» и блок с преподавателями.</p></div><div class="p-dur"><strong>2–4</strong> дн.</div></div><div class="p-step"><div><div class="p-num">03</div><div class="p-tag">Дизайн</div></div><div><h3>Современный и доверительный</h3><p>Дизайн, который транслирует качество образования. Фото команды, атмосфера школы, примеры занятий. Два раунда правок включены.</p></div><div class="p-dur"><strong>3–5</strong> дн.</div></div><div class="p-step"><div><div class="p-num">04</div><div class="p-tag">Запуск</div></div><div><h3>Разработка и настройка</h3><p>Онлайн-запись, SEO-технические настройки, аналитика. Подключаем Google Analytics и Search Console для отслеживания трафика с первого дня.</p></div><div class="p-dur"><strong>5–10</strong> дн.</div></div></div>
   </div>
 </section>
-<section class="sec">
+<section class="sec sec-alt">
   <div class="sec-inner">
     <div class="sec-label">Вопросы и ответы</div>
     <h2 class="sec-title">FAQ</h2>
     <div class="faq-list"><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="faq-question">Делаете ли вы сайты на испанском языке?</span><span class="faq-icon">+</span></button><div class="faq-body"><div class="faq-bi"><p>Да, полностью. Используем ИИ-инструменты для генерации испаноязычного контента с последующей редактурой. Результат — профессиональные тексты под SEO в Google.es без дорогостоящих местных копирайтеров.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="faq-question">Нужна ли отдельная страница для каждого курса?</span><span class="faq-icon">+</span></button><div class="faq-body"><div class="faq-bi"><p>Да — это ключевое для SEO языковой школы. Каждая страница ранжируется по своим запросам: «clases de inglés Barcelona», «curso de español para extranjeros» и т.д. Чем больше качественных страниц — тем больше точек входа из поиска.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="faq-question">Можно ли интегрировать онлайн-оплату за курсы?</span><span class="faq-icon">+</span></button><div class="faq-body"><div class="faq-bi"><p>Да, интегрируем платёжные системы, которые работают в Испании. Студент оплачивает курс или пробный урок прямо на сайте — это упрощает конверсию и снижает отток.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="faq-question">Работаете с онлайн-школами или только с офлайн?</span><span class="faq-icon">+</span></button><div class="faq-body"><div class="faq-bi"><p>С обоими. Для онлайн-школ особенно важен SEO без привязки к городу — настраиваем под запросы со всей Испании и из-за рубежа. Для офлайн — локальный SEO под конкретный город.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="faq-question">Сколько стоит сайт для языковой школы?</span><span class="faq-icon">+</span></button><div class="faq-body"><div class="faq-bi"><p>Лендинг с 3–5 курсами и онлайн-записью — от 90 000 ₽. Многостраничный сайт с каталогом курсов и блогом — от 150 000 ₽. Обсудим на консультации и посчитаем точно.</p></div></div></div></div>
   </div>
 </section>
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">Полезные материалы</div>
+    <h2 class="sec-title">Статьи которые<br><em>помогут разобраться</em></h2>
+    <div class="articles-grid">
+      <div class="article-card">
+        <span class="article-card-tag">Испания · Маркетинг</span>
+        <h3>Как найти клиентов русскоязычному предпринимателю в Испании</h3>
+        <p>5 рабочих способов — от Telegram-сообществ до SEO. Что работает прямо сейчас.</p>
+        <a href="/blog-kak-najti-klientov-v-ispanii">Читать статью →</a>
+      </div>
+      <div class="article-card">
+        <span class="article-card-tag">Испания · Бизнес</span>
+        <h3>Нужен ли сайт при открытии бизнеса в Испании</h3>
+        <p>Честный разбор: когда сайт нужен сразу, а когда можно подождать.</p>
+        <a href="/blog-biznes-v-ispanii-nuzhen-li-sajt">Читать статью →</a>
+      </div>
+      <div class="article-card">
+        <span class="article-card-tag">Experty.es · Испанский язык</span>
+        <h3>Изучение испанского в Испании: варианты для взрослых</h3>
+        <p>EOI, академии, репетитор или бесплатно — реальные цены и сколько времени нужно до B1/B2.</p>
+        <a href="https://experty.es/izuchenie-ispanskogo-v-ispanii" target="_blank" rel="noopener">Читать статью →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="cta-banner">
   <h2>Открываете языковую школу<br><em>или хотите больше студентов?</em></h2>
   <p>Расскажите о проекте — предложим оптимальное решение.</p>
@@ -237,12 +362,12 @@ button{font-family:var(--sans);cursor:pointer}
 <div class="crosslinks">
   <div class="crosslinks-inner">
     <span class="crosslinks-label">Также делаем сайты для</span>
-    <a href="ispaniya.html" class="crosslink-btn"><span>🇪🇸</span> Бизнес в Испании</a><a href="nedvizhimost-ispaniya.html" class="crosslink-btn"><span>🏠</span> Недвижимости</a><a href="salon.html" class="crosslink-btn"><span>💅</span> Салонов красоты</a><a href="index.html" class="crosslink-btn"><span>🏠</span> Все услуги</a>
+    <a href="/ispaniya" class="crosslink-btn"><span>🇪🇸</span> Бизнес в Испании</a><a href="/nedvizhimost-ispaniya" class="crosslink-btn"><span>🏠</span> Недвижимости</a><a href="/salon" class="crosslink-btn"><span>💅</span> Салонов красоты</a><a href="/" class="crosslink-btn"><span>🏠</span> Все услуги</a>
   </div>
 </div>
 <footer class="footer">
   <div class="footer-inner">
-    <a href="index.html" class="footer-logo">Forma<em>.</em></a>
+    <a href="/" class="footer-logo">Forma<em>.</em></a>
     <p class="footer-copy">© 2026 ООО «АКБ» · ИНН 7743458940<br>Москва · Барселона, Испания</p>
   </div>
 </footer>
@@ -258,7 +383,7 @@ button{font-family:var(--sans);cursor:pointer}
       <div class="form-field"><label>Расскажите о проекте</label><textarea name="message" placeholder="Коротко о задаче..." style="min-height:70px;resize:vertical"></textarea></div>
       <button type="submit" class="form-submit" id="mfsub">Отправить заявку →</button>
       <div id="mfsuc" style="display:none;margin-top:12px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:14px;color:#166534">✓ Отправлено! Свяжемся в течение 2 часов.</div>
-      <p style="font-size:12px;color:var(--ink-light);margin-top:10px;text-align:center">Соглашаетесь с <a href="privacy.html" style="text-decoration:underline">политикой конфиденциальности</a></p>
+      <p style="font-size:12px;color:var(--ink-light);margin-top:10px;text-align:center">Соглашаетесь с <a href="/privacy" style="text-decoration:underline">политикой конфиденциальности</a></p>
     </form>
     <div class="modal-div">или напишите сразу</div>
     <div class="msg-row">
@@ -285,7 +410,7 @@ function toggleFaq(btn){const item=btn.closest('.faq-item');const isOpen=item.cl
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
 for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=110121281','ym');
-ym(110121281,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113672601','ym');
+ym(113672601,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
 </script>
 </body></html>

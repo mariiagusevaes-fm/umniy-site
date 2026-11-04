@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Почему дешёвый сайт обходится дороже — разбор реальных кейсов — Forma Studio</title>
+<title>Почему дешёвый сайт обходится дороже</title>
 <meta name="description" content="Разбираем почему сайт за 10 000 рублей в итоге стоит дороже сайта за 100 000. Реальные примеры скрытых затрат при работе с дешёвыми подрядчиками.">
 <meta name="keywords" content="почему дешёвый сайт плохо, скрытые затраты разработка сайта, дешёвый сайт ошибки, стоимость разработки сайта реальная">
 <link rel="canonical" href="https://umniy-site.ru/blog-pochemu-deshyovyj-sajt-dorozhe">
@@ -19,102 +19,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#F7F5F2;--bg-alt:#EFEDE9;--ink:#1A1714;--ink-mid:#5C5650;--ink-light:#9A9590;--gold:#C8A96E;--rule:rgba(26,23,20,0.10);--rule-mid:rgba(26,23,20,0.18);--white:#FFFFFF;--serif:"Playfair Display",Georgia,serif;--sans:"Inter",system-ui,sans-serif}
-html{scroll-behavior:smooth;overflow-x:hidden;font-size:16px}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
-a{color:inherit;text-decoration:none}
-button{font-family:var(--sans);cursor:pointer}
-/* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,242,0.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--serif);font-size:20px;font-weight:500}
-.nav-logo em{font-style:italic;color:var(--gold)}
-.nav-back{font-size:13px;color:var(--ink-light);transition:color .2s}
-.nav-back:hover{color:var(--ink)}
-.nav-cta{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:10px 22px;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s;cursor:pointer;white-space:nowrap}
-.nav-cta:hover{background:#2e2b27}
-/* ARTICLE */
-.article-wrap{max-width:740px;margin:0 auto;padding:108px 48px 96px}
-.article-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;display:block}
-.article-title{font-family:var(--serif);font-size:clamp(28px,4vw,50px);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:18px}
-.article-meta{font-size:13px;color:var(--ink-light);margin-bottom:44px;padding-bottom:28px;border-bottom:1px solid var(--rule)}
-.article-body h2{font-family:var(--serif);font-size:clamp(22px,3vw,28px);font-weight:500;margin:44px 0 14px;line-height:1.25}
-.article-body h3{font-family:var(--serif);font-size:clamp(18px,2.5vw,22px);font-weight:500;margin:28px 0 10px}
-.article-body p{font-size:16px;color:var(--ink-mid);line-height:1.8;margin-bottom:18px}
-.article-body ul,.article-body ol{padding-left:22px;margin-bottom:18px}
-.article-body li{font-size:16px;color:var(--ink-mid);line-height:1.7;margin-bottom:8px}
-.article-body strong{color:var(--ink);font-weight:600}
-.article-body a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
-.hl{background:#fff8ed;border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 8px 8px 0;margin:28px 0}
-.hl p{margin-bottom:0!important;color:var(--ink-mid)}
-/* CTA */
-.article-cta{margin-top:56px;background:var(--ink);border-radius:12px;padding:44px;text-align:center}
-.article-cta h3{font-family:var(--serif);font-size:clamp(22px,3vw,30px);font-weight:400;color:var(--bg);margin-bottom:10px;line-height:1.2}
-.article-cta h3 em{font-style:italic;color:var(--gold)}
-.article-cta p{font-size:15px;color:rgba(247,245,242,.6);margin-bottom:24px}
-.btn-gold{background:var(--gold);color:var(--ink);border:none;border-radius:4px;padding:14px 32px;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:opacity .2s,transform .15s}
-.btn-gold:hover{opacity:.85;transform:translateY(-2px)}
-/* RELATED */
-.related{margin-top:48px;padding-top:36px;border-top:1px solid var(--rule)}
-.related-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);font-weight:600;margin-bottom:20px}
-.related-links{display:flex;flex-direction:column;gap:12px}
-.related-link{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink-mid);transition:color .2s}
-.related-link:hover{color:var(--gold)}
-.related-link::before{content:'→';color:var(--gold);flex-shrink:0}
-.back-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-light);margin-top:32px;transition:color .2s}
-.back-link:hover{color:var(--ink)}
-/* FOOTER */
-.footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
-.footer-inner{max-width:1200px;margin:0 auto;padding:32px 48px;display:flex;justify-content:space-between;align-items:center}
-.footer-logo{font-family:var(--serif);font-size:18px;font-weight:500}
-.footer-logo em{font-style:italic;color:var(--gold)}
-.footer-copy{font-size:13px;color:var(--ink-light);text-align:right;line-height:1.6}
-/* MODAL */
-.modal-overlay{display:none;position:fixed;inset:0;z-index:500;background:rgba(26,23,20,.55);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px}
-.modal-overlay.open{display:flex}
-.modal{background:var(--white);border-radius:16px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;padding:40px 36px;position:relative;animation:mIn .25s ease}
-@keyframes mIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
-.modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:var(--bg-alt);border:none;font-size:15px;color:var(--ink-mid);display:flex;align-items:center;justify-content:center;cursor:pointer}
-.modal-title{font-family:var(--serif);font-size:24px;font-weight:400;margin-bottom:6px}
-.modal-sub{font-size:14px;color:var(--ink-light);margin-bottom:22px}
-.form-field{margin-bottom:14px}
-.form-field label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);font-weight:500;margin-bottom:6px}
-.form-field input{width:100%;background:var(--bg);border:1px solid var(--rule-mid);border-radius:4px;padding:12px 14px;color:var(--ink);font-size:15px;font-family:var(--sans);outline:none;transition:border-color .2s}
-.form-field input:focus{border-color:var(--gold)}
-.form-submit{width:100%;background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:14px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:6px}
-.form-submit:hover{background:#2e2b27}
-.modal-div{display:flex;align-items:center;gap:10px;margin:14px 0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light)}
-.modal-div::before,.modal-div::after{content:"";flex:1;height:1px;background:var(--rule)}
-.msg-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.msg-btn{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 6px;border-radius:8px;border:1px solid var(--rule-mid);color:var(--ink);transition:border-color .18s,background .18s;text-decoration:none}
-.msg-btn:hover{border-color:var(--gold);background:var(--bg)}
-.msg-icon{font-size:20px}
-.msg-label{font-size:11px;color:var(--ink-mid)}
-/* RESPONSIVE */
-@media(max-width:768px){
-  .nav-inner{padding:0 20px}
-  .nav-cta{padding:8px 14px;font-size:12px}
-  .article-wrap{padding:88px 20px 64px}
-  .article-cta{padding:28px 20px}
-  .footer-inner{flex-direction:column;gap:12px;text-align:center;padding:24px 20px}
-  .footer-copy{text-align:center}
-  .modal{padding:28px 18px}
-  .hl{padding:14px 16px}
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Почему дешёвый сайт обходится дороже — разбор реальных ситуаций",
+  "description": "Разбираем почему сайт за 10 000 рублей в итоге стоит дороже сайта за 100 000. Реальные примеры скрытых затрат при работе с дешёвыми подрядчиками.",
+  "image": "https://umniy-site.ru/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Forma Studio",
+    "url": "https://umniy-site.ru"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Forma Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://umniy-site.ru/favicon.png"
+    }
+  },
+  "datePublished": "2026-06-20",
+  "dateModified": "2026-06-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://umniy-site.ru/blog-pochemu-deshyovyj-sajt-dorozhe"
+  },
+  "articleSection": "Разработка · Бюджет",
+  "inLanguage": "ru"
 }
-@media(max-width:390px){
-  .article-title{font-size:26px}
-  .nav-cta{display:none}
-  .article-body p,.article-body li{font-size:15px}
-}
-</style>
+</script>
 </head>
 <body>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Forma<em>.</em></a>
-    <a href="blog.html" class="nav-back">← Блог</a>
+    <a href="/" class="nav-logo">Forma<em>.</em></a>
+    <a href="/blog" class="nav-back">← Блог</a>
     <button class="nav-cta" onclick="openModal()">Обсудить проект</button>
   </div>
 </nav>
@@ -178,15 +119,15 @@ button{font-family:var(--sans);cursor:pointer}
 
   <div class="related">
     <div class="related-label">Читайте также</div>
-    <div class="related-links"><a href="blog-kak-vybrat-studiyu.html" class="related-link">Как выбрать студию: 8 вопросов до договора</a><a href="blog-sajt-ili-socset.html" class="related-link">Сайт или соцсети: что выбрать</a><a href="index.html#pricing" class="related-link">Наши тарифы с детальными чеклистами</a></div>
+    <div class="related-links"><a href="/blog-kak-vybrat-studiyu" class="related-link">Как выбрать студию: 8 вопросов до договора</a><a href="/blog-sajt-ili-socset" class="related-link">Сайт или соцсети: что выбрать</a><a href="/#pricing" class="related-link">Наши тарифы с детальными чеклистами</a></div>
   </div>
 
-  <a href="blog.html" class="back-link">← Все статьи блога</a>
+  <a href="/blog" class="back-link">← Все статьи блога</a>
 </div>
 
 <footer class="footer">
   <div class="footer-inner">
-    <a href="index.html" class="footer-logo">Forma<em>.</em></a>
+    <a href="/" class="footer-logo">Forma<em>.</em></a>
     <p class="footer-copy">© 2026 ООО «АКБ» · ИНН 7743458940 · ОГРН 1247700690027<br>125413, г. Москва, ул. Фестивальная, д. 46, к. 1, оф. 77</p>
   </div>
 </footer>
@@ -201,7 +142,7 @@ button{font-family:var(--sans);cursor:pointer}
       <div class="form-field"><label>Телефон или Telegram</label><input type="text" name="contact" placeholder="+7 или @username" required></div>
       <button type="submit" class="form-submit" id="mfsub">Отправить заявку →</button>
       <div id="mfsuc" style="display:none;margin-top:12px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:14px;color:#166534">✓ Отправлено! Свяжемся в течение 2 часов.</div>
-      <p style="font-size:12px;color:var(--ink-light);margin-top:10px;text-align:center">Соглашаетесь с <a href="privacy.html" style="text-decoration:underline">политикой конфиденциальности</a></p>
+      <p style="font-size:12px;color:var(--ink-light);margin-top:10px;text-align:center">Соглашаетесь с <a href="/privacy" style="text-decoration:underline">политикой конфиденциальности</a></p>
     </form>
     <div class="modal-div">или напишите сразу</div>
     <div class="msg-row">
@@ -228,7 +169,7 @@ else throw new Error()}catch{sb.textContent='Отправить →';sb.disabled
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
 for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=110121281','ym');
-ym(110121281,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113672601','ym');
+ym(113672601,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
 </script>
 </body></html>

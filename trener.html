@@ -30,69 +30,40 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="/niche.css">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#F7F5F2;--bg-alt:#EFEDE9;--ink:#1A1714;--ink-mid:#5C5650;--ink-light:#9A9590;--gold:#C8A96E;--rule:rgba(26,23,20,0.10);--rule-mid:rgba(26,23,20,0.18);--white:#FFFFFF;--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
-html{scroll-behavior:smooth;overflow-x:hidden;font-size:16px}
 body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-button{font-family:var(--sans);cursor:pointer}
 
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,242,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--serif);font-size:20px;font-weight:500}
-.nav-logo em{font-style:italic;color:var(--gold)}
-.nav-back{font-size:13px;color:var(--ink-light);transition:color .2s}
-.nav-back:hover{color:var(--ink)}
 .nav-cta{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:10px 22px;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
-.nav-cta:hover{background:#2e2b27}
 
 /* HERO */
 .hero{padding-top:68px;min-height:85vh;display:flex;flex-direction:column}
 .hero-top{max-width:1200px;margin:0 auto;padding:60px 48px 0;width:100%;display:flex;justify-content:space-between;align-items:flex-start}
-.hero-eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);font-weight:500}
 .hero-niche-tag{display:inline-block;background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.3);color:var(--gold);border-radius:100px;padding:5px 16px;font-size:12px;font-weight:600;letter-spacing:.06em}
 .hero-headline-wrap{max-width:1200px;margin:0 auto;padding:44px 48px 0;width:100%}
 .hero-h1{font-family:var(--serif);font-size:clamp(34px,4.5vw,64px);font-weight:400;line-height:1.0;letter-spacing:-.02em}
-.hero-h1 em{font-style:italic;color:var(--gold)}
-.hero-seo-sub{font-size:13px;color:var(--ink-light);margin-top:10px;line-height:1.5}
 .hero-lower{max-width:1200px;margin:0 auto;padding:48px 48px 72px;width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
 .hero-sub{font-size:17px;line-height:1.75;color:var(--ink-mid);max-width:520px;font-weight:300}
-.hero-sub strong{font-weight:600;color:var(--ink)}
-.hero-actions{display:flex;flex-direction:column;align-items:flex-end;gap:14px;flex-shrink:0}
 .btn-primary{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:16px 32px;font-size:14px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s,transform .15s;white-space:nowrap}
-.btn-primary:hover{background:#2e2b27;transform:translateY(-2px)}
 .hero-note{font-size:12px;color:var(--ink-light);letter-spacing:.04em;text-align:right}
 .hero-divider{border:none;border-top:1px solid var(--rule)}
 
 /* STATS */
-.stats-row{max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .stat{padding:28px 28px 28px 0;border-right:1px solid var(--rule)}
-.stat:first-child{padding-left:0}
-.stat:last-child{border-right:none}
 .stat-num{font-family:var(--serif);font-size:40px;font-weight:400;line-height:1;letter-spacing:-.02em;margin-bottom:5px}
-.stat-label{font-size:13px;color:var(--ink-light);line-height:1.4}
 
 /* SECTIONS */
 .sec{padding:88px 0}
-.sec-alt{background:var(--bg-alt)}
-.sec-inner{max-width:1200px;margin:0 auto;padding:0 48px}
-.sec-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .sec-label::before{content:'';display:inline-block;width:20px;height:1px;background:var(--gold)}
 .sec-title{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
-.sec-title em{font-style:italic;color:var(--gold)}
 .sec-sub{font-size:16px;color:var(--ink-mid);max-width:520px;line-height:1.7;margin-bottom:56px}
 
 /* WHY GRID */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule)}
 .w-item{padding:40px 36px 40px 0;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.w-item:nth-child(3n){border-right:none;padding-right:0}
 .w-item:nth-child(3n+2),.w-item:nth-child(3n+3){padding-left:36px}
-.w-item:nth-last-child(-n+3){border-bottom:none}
-.w-icon{font-size:28px;margin-bottom:14px}
-.w-item h3{font-family:var(--serif);font-size:18px;font-weight:500;margin-bottom:9px;line-height:1.3}
-.w-item p{font-size:14px;color:var(--ink-mid);line-height:1.65}
 
 /* PROCESS */
 .process-list{display:flex;flex-direction:column}
@@ -129,36 +100,23 @@ button{font-family:var(--sans);cursor:pointer}
 
 /* FAQ */
 .faq-list{display:flex;flex-direction:column}
-.faq-item{border-top:1px solid var(--rule)}
-.faq-item:last-child{border-bottom:1px solid var(--rule)}
 .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;background:transparent;border:none;color:var(--ink);text-align:left;transition:color .2s}
 .faq-q:hover{color:var(--ink-mid)}
 .faq-question{font-family:var(--serif);font-size:18px;font-weight:400;line-height:1.3}
 .faq-icon{width:30px;height:30px;border:1px solid var(--rule-mid);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--ink-mid);flex-shrink:0;transition:background .2s,border-color .2s,transform .3s}
-.faq-item.open .faq-icon{background:var(--ink);border-color:var(--ink);color:var(--bg);transform:rotate(45deg)}
-.faq-body{max-height:0;overflow:hidden;transition:max-height .38s ease}
 .faq-item.open .faq-body{max-height:300px}
 .faq-bi{padding:0 0 24px}
 .faq-bi p{font-size:15px;color:var(--ink-mid);line-height:1.75;max-width:680px}
 
 /* CTA BANNER */
-.cta-banner{background:var(--ink);padding:72px 48px;text-align:center}
 .cta-banner h2{font-family:var(--serif);font-size:clamp(28px,3.5vw,48px);font-weight:400;color:var(--bg);letter-spacing:-.02em;margin-bottom:12px}
-.cta-banner h2 em{font-style:italic;color:var(--gold)}
 .cta-banner p{font-size:16px;color:rgba(247,245,242,.6);margin-bottom:32px}
 .btn-gold{background:var(--gold);color:var(--ink);border:none;border-radius:4px;padding:16px 36px;font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;transition:opacity .2s,transform .15s}
-.btn-gold:hover{opacity:.85;transform:translateY(-2px)}
 
 /* FOOTER */
-.footer{border-top:1px solid var(--rule);background:var(--bg-alt)}
 .footer-inner{max-width:1200px;margin:0 auto;padding:36px 48px;display:flex;justify-content:space-between;align-items:center}
-.footer-logo{font-family:var(--serif);font-size:18px;font-weight:500}
-.footer-logo em{font-style:italic;color:var(--gold)}
-.footer-copy{font-size:13px;color:var(--ink-light);text-align:right;line-height:1.6}
 
 /* MODAL */
-.modal-overlay{display:none;position:fixed;inset:0;z-index:500;background:rgba(26,23,20,.55);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px}
-.modal-overlay.open{display:flex}
 .modal{background:var(--white);border-radius:16px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;padding:44px 40px;position:relative;animation:mIn .28s ease}
 @keyframes mIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
 .modal-close{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;background:var(--bg-alt);border:none;font-size:16px;color:var(--ink-mid);display:flex;align-items:center;justify-content:center;transition:background .2s}
@@ -174,16 +132,12 @@ button{font-family:var(--sans);cursor:pointer}
 .form-field{margin-bottom:15px}
 .form-field label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);font-weight:500;margin-bottom:7px}
 .form-field input,.form-field textarea{width:100%;background:var(--bg);border:1px solid var(--rule-mid);border-radius:4px;padding:12px 15px;color:var(--ink);font-size:15px;font-family:var(--sans);outline:none;transition:border-color .2s}
-.form-field input:focus,.form-field textarea:focus{border-color:var(--gold)}
 .form-field textarea{min-height:80px;resize:vertical}
 .form-submit{width:100%;background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:15px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:background .2s;margin-top:6px}
-.form-submit:hover{background:#2e2b27}
 .form-legal{font-size:12px;color:var(--ink-light);margin-top:12px;text-align:center;line-height:1.5}
 .msg-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
 .msg-btn{display:flex;flex-direction:column;align-items:center;gap:5px;padding:11px 6px;border-radius:9px;border:1px solid var(--rule-mid);color:var(--ink);transition:border-color .18s,background .18s}
 .msg-btn:hover{border-color:var(--ink-mid);background:var(--bg)}
-.msg-icon{font-size:20px}
-.msg-label{font-size:11px;color:var(--ink-mid)}
 .modal-div{display:flex;align-items:center;gap:10px;margin:16px 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light)}
 .modal-div::before,.modal-div::after{content:'';flex:1;height:1px;background:var(--rule)}
 
@@ -210,56 +164,44 @@ button{font-family:var(--sans);cursor:pointer}
   .footer-inner{flex-direction:column;gap:14px;text-align:center}
   .footer-copy{text-align:center}
   .q-options{grid-template-columns:1fr}
-}
 
 /* ── CROSSLINKS ─────────────────────────────────── */
 .crosslinks {
   background: var(--bg-alt);
   border-top: 1px solid var(--rule);
   padding: 40px 48px;
-}
 .crosslinks-inner {
   max-width: 1200px; margin: 0 auto;
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-}
 .crosslinks-label {
   font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink-light); font-weight: 500; margin-right: 8px;
-}
 .crosslink-btn {
   display: inline-flex; align-items: center; gap: 7px;
   background: var(--white); border: 1px solid var(--rule-mid);
   border-radius: 100px; padding: 7px 16px;
   font-size: 13px; font-weight: 500; color: var(--ink-mid);
   text-decoration: none; transition: border-color 0.18s, color 0.18s, background 0.18s;
-}
 .crosslink-btn:hover {
   border-color: var(--gold); color: var(--ink); background: #fdf8f0;
-}
 @media (max-width: 768px) {
   .crosslinks { padding: 28px 20px; }
-}
 
-@media(max-width:390px){
   .hero-h1{font-size:36px}
   .sec-title{font-size:26px}
   .stat-num{font-size:28px}
   .nav-cta{display:none}
   .price-val{font-size:36px}
   .why-grid{grid-template-columns:1fr}
-}
 
 @media(min-width:901px) and (max-width:1100px){
   .hero-h1{font-size:clamp(40px,5.5vw,72px)}
   .price-grid{grid-template-columns:1fr}
   .process-item .p-step{grid-template-columns:140px 1fr auto}
-}
 
-@media(max-width:768px){
   div[style*="grid-template-columns:80px 1fr auto"]{grid-template-columns:1fr!important;gap:10px!important}
   div[style*="grid-template-columns:repeat(2,1fr)"][style*="gap:14px"]{grid-template-columns:1fr!important}
   div[style*="grid-template-columns:repeat(3,1fr)"][style*="gap:20px"]{grid-template-columns:1fr!important}
-}
 
 @media (max-width: 1280px) {
   .nav-inner { padding: 0 32px; }
@@ -268,7 +210,6 @@ button{font-family:var(--sans);cursor:pointer}
   .hero-lower { padding-left: 32px !important; padding-right: 32px !important; }
   .sec-inner { padding: 0 32px; }
   .stats-row { padding: 0 32px; }
-}
 @media (min-width: 1025px) and (max-width: 1280px) {
   .hero { min-height: auto; }
   .hero-h1 { font-size: clamp(32px, 4vw, 52px) !important; line-height: 1.05 !important; }
@@ -276,15 +217,14 @@ button{font-family:var(--sans);cursor:pointer}
   .hero-headline-wrap { padding-top: 16px !important; }
   .hero-lower { padding-top: 20px !important; padding-bottom: 32px !important; }
   .hero-sub { font-size: 15px !important; }
-}
 </style>
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Forma<em>.</em></a>
-    <a href="index.html" class="nav-back">← Все услуги</a>
+    <a href="/" class="nav-logo">Forma<em>.</em></a>
+    <a href="/" class="nav-back">← Все услуги</a>
     <button class="nav-cta" onclick="openModal()">Получить предложение</button>
   </div>
 </nav>
@@ -565,19 +505,19 @@ button{font-family:var(--sans);cursor:pointer}
         <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block">Фитнес · Маркетинг</span>
         <h3 style="font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px">Как тренер получает клиентов из интернета</h3>
         <p style="font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px">Разбор каналов: сайт, соцсети, YouTube — что работает и в каком порядке запускать.</p>
-        <a href="blog-kak-trener-poluchaet-klientov.html" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
+        <a href="/blog-kak-trener-poluchaet-klientov" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
       </div>
       <div style="background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:24px">
         <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block">Разработка · Стратегия</span>
         <h3 style="font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px">Лендинг или многостраничный — что выбрать</h3>
         <p style="font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px">Конкретные примеры: когда достаточно лендинга, когда нужен полноценный сайт.</p>
-        <a href="blog-lending-ili-mnogostranchnyj.html" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
+        <a href="/blog-lending-ili-mnogostranchnyj" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
       </div>
       <div style="background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:24px">
         <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block">SEO · Инструменты</span>
         <h3 style="font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px">Как проверить SEO сайта самостоятельно</h3>
         <p style="font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px">Яндекс.Вебмастер, PageSpeed и другие бесплатные инструменты — что конкретно смотреть.</p>
-        <a href="blog-kak-proverit-seo-sajta.html" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
+        <a href="/blog-kak-proverit-seo-sajta" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
       </div>
     </div>
   </div>
@@ -587,7 +527,7 @@ button{font-family:var(--sans);cursor:pointer}
 
 <footer class="footer">
   <div class="footer-inner">
-    <a href="index.html" class="footer-logo">Forma<em>.</em></a>
+    <a href="/" class="footer-logo">Forma<em>.</em></a>
     <p class="footer-copy">© 2026 ООО «АКБ» · ИНН 7743458940 · ОГРН 1247700690027<br>125413, г. Москва, ул. Фестивальная, д. 46, к. 1, оф. 77</p>
   </div>
 </footer>
@@ -622,7 +562,7 @@ button{font-family:var(--sans);cursor:pointer}
         <button type="submit" class="form-submit" id="mfsub">Получить расчёт →</button>
         <div id="mfsuc" style="display:none;margin-top:14px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:14px;color:#166534">✓ Заявка отправлена! Свяжемся в течение 2 часов.</div>
         <div id="mferr" style="display:none;margin-top:14px;padding:12px;background:#fff1f2;border:1px solid #fecdd3;border-radius:8px;font-size:14px;color:#9f1239">Ошибка. Напишите напрямую: info@umniy-site.ru</div>
-        <p class="form-legal">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" style="text-decoration:underline">политикой конфиденциальности</a></p>
+        <p class="form-legal">Нажимая кнопку, вы соглашаетесь с <a href="/privacy" style="text-decoration:underline">политикой конфиденциальности</a></p>
       </form>
       <div class="modal-div">или напишите сразу</div>
       <div class="msg-row">
@@ -657,8 +597,8 @@ if(mf){mf.addEventListener('submit',async e=>{
 function toggleFaq(btn){const item=btn.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));if(!isOpen)item.classList.add('open')}
 
 // Yandex Metrika
-(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=110121281','ym');
-ym(110121281,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113672601','ym');
+ym(113672601,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
 </script>
 </body>
 </html>
