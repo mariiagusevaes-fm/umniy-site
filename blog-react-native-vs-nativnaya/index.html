@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>React Native vs нативная разработка — что выбрать</title>
+<meta name="description" content="Сравниваем React Native и нативную разработку для iOS и Android. Когда кроссплатформа выгоднее, а когда нужен нативный код.">
+<meta name="keywords" content="React Native vs нативная разработка, кроссплатформенное приложение или нативное, Flutter или нативная разработка, React Native 2026">
+<link rel="canonical" href="https://umniy-site.ru/blog-react-native-vs-nativnaya">
+<meta property="og:title" content="React Native vs нативная разработка — что выбрать в 2026 году — Forma Studio">
+<meta property="og:description" content="Сравниваем React Native и нативную разработку для iOS и Android. Когда кроссплатформа выгоднее, а когда нужен нативный код.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://umniy-site.ru/blog-react-native-vs-nativnaya">
+<meta property="og:image" content="https://umniy-site.ru/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Forma Studio">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "React Native vs нативная разработка — что выбрать в 2026 году",
+  "description": "Сравниваем React Native и нативную разработку для iOS и Android. Когда кроссплатформа выгоднее, а когда нужен нативный код.",
+  "image": "https://umniy-site.ru/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Forma Studio",
+    "url": "https://umniy-site.ru"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Forma Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://umniy-site.ru/favicon.png"
+    }
+  },
+  "datePublished": "2026-06-14",
+  "dateModified": "2026-06-14",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://umniy-site.ru/blog-react-native-vs-nativnaya"
+  },
+  "articleSection": "Разработка · Приложения",
+  "inLanguage": "ru"
+}
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Forma<em>.</em></a>
+    <a href="/blog" class="nav-back">← Блог</a>
+    <button class="nav-cta" onclick="openModal()">Обсудить проект</button>
+  </div>
+</nav>
+<div class="article-wrap">
+  <span class="article-tag">Разработка · Приложения</span>
+  <h1 class="article-title">React Native vs нативная разработка — что выбрать в 2026 году</h1>
+  <div class="article-meta">Forma Studio · 14 июня 2026 · 6 минут</div>
+  <div class="article-body"><p>Один из главных технических вопросов при заказе приложения: делать нативно (отдельный код для iOS и Android) или кроссплатформенно (один код для обеих платформ). Разбираем честно, без маркетинга.</p>
+
+<h2>Что такое нативная разработка</h2>
+<p>Отдельное приложение для iOS на Swift/Objective-C и отдельное для Android на Kotlin/Java. Два разных кодовых репозитория, две команды разработчиков (или один разработчик с очень широкой экспертизой).</p>
+<p><strong>Плюсы:</strong> максимальная производительность, полный доступ ко всем платформенным API, лучший пользовательский опыт для сложных интерфейсов.</p>
+<p><strong>Минусы:</strong> дороже в 1.5–2 раза, дольше разрабатывается, сложнее поддерживать — баг нужно исправлять в двух кодовых базах.</p>
+
+<h2>Что такое React Native и Flutter</h2>
+<p><strong>React Native</strong> (от Meta) и <strong>Flutter</strong> (от Google) — фреймворки, которые позволяют писать один код и компилировать его в нативные приложения для iOS и Android. Мы используем React Native.</p>
+<p><strong>Плюсы:</strong> один код = меньше затрат, быстрее разработка, одна команда на оба платформы, проще поддерживать.</p>
+<p><strong>Минусы:</strong> чуть ниже производительность для очень сложных анимаций, некоторые платформенные функции требуют дополнительных «мостиков».</p>
+
+<h2>Когда выбрать React Native / Flutter</h2>
+<ul>
+  <li>Справочники, каталоги, приложения с базой данных</li>
+  <li>Сервисы записи, форм, уведомлений</li>
+  <li>Бизнес-приложения без сложной графики</li>
+  <li>MVP для проверки идеи</li>
+  <li>Ограниченный бюджет</li>
+</ul>
+<div class="hl"><p>Для 80% бизнес-приложений React Native даёт результат неотличимый от нативного — при стоимости на 30–40% ниже. Именно его мы используем для МожноЛи и Mama Clara.</p></div>
+
+<h2>Когда выбрать нативную разработку</h2>
+<ul>
+  <li>Игры и приложения с тяжёлой графикой или AR</li>
+  <li>Работа с камерой на профессиональном уровне</li>
+  <li>Bluetooth, NFC, специфическое железо</li>
+  <li>Финтех с требованиями к безопасности на уровне банка</li>
+  <li>Приложение уже есть на одной платформе и нужно его расширить</li>
+</ul>
+
+<h2>А что насчёт PWA?</h2>
+<p>Progressive Web App — сайт, который ведёт себя как приложение. Не требует установки, открывается через браузер. Это самый дешёвый вариант, но с ограничениями: нет публикации в App Store, ограниченный доступ к функциям телефона, хуже работает офлайн.</p>
+<p>PWA подходит если основная цель — удобный мобильный интерфейс, а не публикация в сторах.</p>
+
+<h2>Итоговая таблица</h2>
+<p>Если коротко:</p>
+<ul>
+  <li><strong>Бизнес-приложение, ограниченный бюджет</strong> → React Native</li>
+  <li><strong>Сложная графика, максимальная производительность</strong> → Нативная разработка</li>
+  <li><strong>Проверить идею быстро и дёшево</strong> → PWA или конструктор</li>
+  <li><strong>Не уверены</strong> → обсудите с разработчиком конкретный кейс</li>
+</ul></div>
+  <div class="article-cta">
+    <h3>Есть идея приложения?<br><em>Подскажем оптимальный стек</em></h3>
+    <p>Расскажите о задаче — выберем технологию и посчитаем стоимость честно.</p>
+    <button class="btn-gold" onclick="openModal()">Обсудить проект →</button>
+  </div>
+  <div class="related">
+    <div class="related-label">Читайте также</div>
+    <div class="related-links"><a href="/blog-skolko-stoit-mobilnoe-prilozhenie" class="related-link">Сколько стоит мобильное приложение в 2026</a><a href="/prilozhenie" class="related-link">Разработка приложений под ключ — подробнее</a><a href="/blog-kak-vybrat-studiyu" class="related-link">Как выбрать студию: 8 вопросов</a></div>
+  </div>
+  <a href="/blog" class="back-link">← Все статьи блога</a>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">Forma<em>.</em></a>
+    <p class="footer-copy">© 2026 ООО «АКБ» · ИНН 7743458940 · ОГРН 1247700690027<br>125413, г. Москва, ул. Фестивальная, д. 46, к. 1, оф. 77</p>
+  </div>
+</footer>
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h2 class="modal-title">Обсудим проект</h2>
+    <p class="modal-sub">Оставьте контакт — ответим в течение 2 часов</p>
+    <form id="mf" action="https://formspree.io/f/mbdvdyjw" method="POST">
+      <div class="form-field"><label>Имя</label><input type="text" name="name" placeholder="Александр" required></div>
+      <div class="form-field"><label>Телефон или Telegram</label><input type="text" name="contact" placeholder="+7 или @username" required></div>
+      <button type="submit" class="form-submit" id="mfsub">Отправить заявку →</button>
+      <div id="mfsuc" style="display:none;margin-top:12px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:14px;color:#166534">✓ Отправлено!</div>
+      <p style="font-size:12px;color:var(--ink-light);margin-top:10px;text-align:center">Соглашаетесь с <a href="/privacy" style="text-decoration:underline">политикой конфиденциальности</a></p>
+    </form>
+    <div class="modal-div">или напишите сразу</div>
+    <div class="msg-row">
+      <a href="https://wa.me/79167347616" target="_blank" class="msg-btn"><span class="msg-icon">💬</span><span class="msg-label">WhatsApp</span></a>
+      <a href="https://t.me/infoaccount1" target="_blank" class="msg-btn"><span class="msg-icon">✈️</span><span class="msg-label">Telegram</span></a>
+      <a href="mailto:index@umniy-site.ru" class="msg-btn"><span class="msg-icon">✉️</span><span class="msg-label">Email</span></a>
+    </div>
+  </div>
+</div>
+<script>
+function openModal(){document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
+function closeModalOutside(e){if(e.target===document.getElementById('modal'))closeModal()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()})
+const mf=document.getElementById('mf');
+if(mf){mf.addEventListener('submit',async e=>{e.preventDefault();
+const sb=document.getElementById('mfsub');sb.textContent='Отправляем...';sb.disabled=true;
+try{const r=await fetch(mf.action,{method:'POST',body:new FormData(mf),headers:{'Accept':'application/json'}});
+if(r.ok){document.getElementById('mfsuc').style.display='block';mf.reset();sb.textContent='Отправлено ✓'}
+else throw new Error()}catch{sb.textContent='Отправить →';sb.disabled=false}})}
+</script>
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113672601','ym');
+ym(113672601,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+</script>
+</body></html>

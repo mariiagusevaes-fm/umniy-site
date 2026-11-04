@@ -1,0 +1,17 @@
+Options -MultiViews
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.umniy-site\.ru$ [NC]
+RewriteRule ^(.*)$ https://umniy-site.ru/$1 [L,R=301]
+
+# Remove .html extension from URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect .html URLs to clean URLs (avoid duplicate content)
+# Абсолютный https-адрес указан явно, потому что за прокси Apache сам
+# не видит, что соединение было по HTTPS, и без этого редиректил на http.
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ https://umniy-site.ru/%1 [NC,L,R=301]

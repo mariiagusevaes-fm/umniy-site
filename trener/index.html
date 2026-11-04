@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайт для тренера и фитнес-клуба с SEO — Forma Studio</title>
+<meta name="description" content="Разработка сайта для персонального тренера, фитнес-студии и спортивного клуба с SEO и онлайн-записью. Запуск за 7–14 дней по всей России.">
+<meta name="keywords" content="сайт для фитнес тренера, разработка сайта тренера под ключ, сайт спортивного клуба, сайт фитнес студии с SEO, личный сайт тренера онлайн-запись">
+<link rel="canonical" href="https://umniy-site.ru/trener">
+<meta property="og:title" content="Сайт для тренера и фитнес-клуба с SEO — Forma Studio">
+<meta property="og:description" content="Продающий сайт для персонального тренера и фитнес-студии с SEO и онлайн-записью. Запуск за 7–14 дней.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://umniy-site.ru/trener">
+<meta property="og:image" content="https://umniy-site.ru/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Forma Studio">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Разработка сайта для фитнес-тренера",
+  "provider":{"@type":"ProfessionalService","name":"Forma Studio","url":"https://umniy-site.ru","telephone":"+7-916-734-76-16"},
+  "areaServed":{"@type":"Country","name":"Россия"},
+  "url":"https://umniy-site.ru/trener.html"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="/niche.css">
+<style>
+:root{--bg:#F7F5F2;--bg-alt:#EFEDE9;--ink:#1A1714;--ink-mid:#5C5650;--ink-light:#9A9590;--gold:#C8A96E;--rule:rgba(26,23,20,0.10);--rule-mid:rgba(26,23,20,0.18);--white:#FFFFFF;--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,242,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule)}
+.nav-cta{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:10px 22px;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+
+/* HERO */
+.hero{padding-top:68px;min-height:85vh;display:flex;flex-direction:column}
+.hero-top{max-width:1200px;margin:0 auto;padding:60px 48px 0;width:100%;display:flex;justify-content:space-between;align-items:flex-start}
+.hero-niche-tag{display:inline-block;background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.3);color:var(--gold);border-radius:100px;padding:5px 16px;font-size:12px;font-weight:600;letter-spacing:.06em}
+.hero-headline-wrap{max-width:1200px;margin:0 auto;padding:44px 48px 0;width:100%}
+.hero-h1{font-family:var(--serif);font-size:clamp(34px,4.5vw,64px);font-weight:400;line-height:1.0;letter-spacing:-.02em}
+.hero-lower{max-width:1200px;margin:0 auto;padding:48px 48px 72px;width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.hero-sub{font-size:17px;line-height:1.75;color:var(--ink-mid);max-width:520px;font-weight:300}
+.btn-primary{background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:16px 32px;font-size:14px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:background .2s,transform .15s;white-space:nowrap}
+.hero-note{font-size:12px;color:var(--ink-light);letter-spacing:.04em;text-align:right}
+.hero-divider{border:none;border-top:1px solid var(--rule)}
+
+/* STATS */
+.stat{padding:28px 28px 28px 0;border-right:1px solid var(--rule)}
+.stat-num{font-family:var(--serif);font-size:40px;font-weight:400;line-height:1;letter-spacing:-.02em;margin-bottom:5px}
+
+/* SECTIONS */
+.sec{padding:88px 0}
+.sec-label::before{content:'';display:inline-block;width:20px;height:1px;background:var(--gold)}
+.sec-title{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+.sec-sub{font-size:16px;color:var(--ink-mid);max-width:520px;line-height:1.7;margin-bottom:56px}
+
+/* WHY GRID */
+.w-item{padding:40px 36px 40px 0;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.w-item:nth-child(3n+2),.w-item:nth-child(3n+3){padding-left:36px}
+
+/* PROCESS */
+.process-list{display:flex;flex-direction:column}
+.p-step{display:grid;grid-template-columns:180px 1fr auto;border-top:1px solid var(--rule);padding:36px 0;gap:32px;align-items:start}
+.p-step:last-child{border-bottom:1px solid var(--rule)}
+.p-num{font-family:var(--serif);font-size:32px;font-weight:400;color:var(--gold);line-height:1}
+.p-tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);margin-top:4px}
+.p-step h3{font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px;line-height:1.25}
+.p-step p{font-size:14px;color:var(--ink-mid);line-height:1.7}
+.p-dur{font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px}
+.p-dur strong{display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink);letter-spacing:-.01em}
+
+/* PRICING */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--rule-mid);border-radius:8px;overflow:hidden}
+.price-item{padding:44px 36px;border-right:1px solid var(--rule-mid);position:relative}
+.price-item:last-child{border-right:none}
+.price-item.featured{background:var(--ink);color:var(--bg)}
+.price-badge{position:absolute;top:18px;right:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.price-name{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:20px}
+.price-item.featured .price-name{color:rgba(247,245,242,.45)}
+.price-val{font-family:var(--serif);font-size:48px;font-weight:400;line-height:1;letter-spacing:-.02em;margin-bottom:6px}
+.price-period{font-size:13px;color:var(--ink-light);margin-bottom:28px}
+.price-item.featured .price-period{color:rgba(247,245,242,.45)}
+.price-div{height:1px;background:var(--rule);margin-bottom:24px}
+.price-item.featured .price-div{background:rgba(247,245,242,.12)}
+.price-ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+.price-ul li{font-size:14px;color:var(--ink-mid);display:flex;gap:10px;align-items:flex-start;line-height:1.4}
+.price-item.featured .price-ul li{color:rgba(247,245,242,.75)}
+.price-ul li::before{content:'—';color:var(--gold);flex-shrink:0}
+.btn-outline{display:block;width:100%;text-align:center;background:transparent;color:var(--ink);border:1px solid var(--rule-mid);border-radius:4px;padding:13px;font-size:13px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;transition:background .2s,border-color .2s}
+.btn-outline:hover{border-color:var(--ink);background:rgba(26,23,20,.03)}
+.btn-inv{display:block;width:100%;text-align:center;background:var(--bg);color:var(--ink);border:none;border-radius:4px;padding:13px;font-size:13px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;transition:opacity .2s}
+.btn-inv:hover{opacity:.85}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;background:transparent;border:none;color:var(--ink);text-align:left;transition:color .2s}
+.faq-q:hover{color:var(--ink-mid)}
+.faq-question{font-family:var(--serif);font-size:18px;font-weight:400;line-height:1.3}
+.faq-icon{width:30px;height:30px;border:1px solid var(--rule-mid);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--ink-mid);flex-shrink:0;transition:background .2s,border-color .2s,transform .3s}
+.faq-item.open .faq-body{max-height:300px}
+.faq-bi{padding:0 0 24px}
+.faq-bi p{font-size:15px;color:var(--ink-mid);line-height:1.75;max-width:680px}
+
+/* CTA BANNER */
+.cta-banner h2{font-family:var(--serif);font-size:clamp(28px,3.5vw,48px);font-weight:400;color:var(--bg);letter-spacing:-.02em;margin-bottom:12px}
+.cta-banner p{font-size:16px;color:rgba(247,245,242,.6);margin-bottom:32px}
+.btn-gold{background:var(--gold);color:var(--ink);border:none;border-radius:4px;padding:16px 36px;font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;transition:opacity .2s,transform .15s}
+
+/* FOOTER */
+.footer-inner{max-width:1200px;margin:0 auto;padding:36px 48px;display:flex;justify-content:space-between;align-items:center}
+
+/* MODAL */
+.modal{background:var(--white);border-radius:16px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;padding:44px 40px;position:relative;animation:mIn .28s ease}
+@keyframes mIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.modal-close{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;background:var(--bg-alt);border:none;font-size:16px;color:var(--ink-mid);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.modal-close:hover{background:var(--rule)}
+.modal-title{font-family:var(--serif);font-size:26px;font-weight:400;margin-bottom:6px}
+.modal-sub{font-size:14px;color:var(--ink-light);margin-bottom:24px}
+.q-progress{height:3px;background:var(--rule);border-radius:2px;margin-bottom:18px;overflow:hidden}
+.q-bar{height:100%;background:var(--gold);border-radius:2px;transition:width .4s ease}
+.q-step-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-light);font-weight:600;margin-bottom:10px}
+.q-options{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
+.q-opt{background:var(--bg);border:1px solid var(--rule-mid);border-radius:9px;padding:13px 14px;font-size:14px;font-weight:500;color:var(--ink);text-align:left;transition:border-color .18s,background .18s}
+.q-opt:hover,.q-opt.selected{border-color:var(--gold);background:#fdf8f0}
+.form-field{margin-bottom:15px}
+.form-field label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);font-weight:500;margin-bottom:7px}
+.form-field input,.form-field textarea{width:100%;background:var(--bg);border:1px solid var(--rule-mid);border-radius:4px;padding:12px 15px;color:var(--ink);font-size:15px;font-family:var(--sans);outline:none;transition:border-color .2s}
+.form-field textarea{min-height:80px;resize:vertical}
+.form-submit{width:100%;background:var(--ink);color:var(--bg);border:none;border-radius:4px;padding:15px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:background .2s;margin-top:6px}
+.form-legal{font-size:12px;color:var(--ink-light);margin-top:12px;text-align:center;line-height:1.5}
+.msg-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.msg-btn{display:flex;flex-direction:column;align-items:center;gap:5px;padding:11px 6px;border-radius:9px;border:1px solid var(--rule-mid);color:var(--ink);transition:border-color .18s,background .18s}
+.msg-btn:hover{border-color:var(--ink-mid);background:var(--bg)}
+.modal-div{display:flex;align-items:center;gap:10px;margin:16px 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light)}
+.modal-div::before,.modal-div::after{content:'';flex:1;height:1px;background:var(--rule)}
+
+@media(max-width:900px){
+  .nav-inner{padding:0 20px}
+  .hero-top,.hero-headline-wrap,.hero-lower,.stats-row,.sec-inner,.cta-banner,.footer-inner{padding-left:20px;padding-right:20px}
+  .hero-top{flex-direction:column;gap:12px;padding-top:32px}
+  .hero-lower{flex-direction:column;gap:24px;padding-top:28px}
+  .hero-actions{align-items:stretch;width:100%}
+  .btn-primary{width:100%;text-align:center}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(3){border-top:1px solid var(--rule);padding-left:0}
+  .stat:nth-child(4){border-top:1px solid var(--rule);border-right:none}
+  .why-grid{grid-template-columns:1fr}
+  .w-item{border-right:none!important;padding-left:0!important;padding-right:0!important}
+  .w-item:nth-last-child(-n+3){border-bottom:1px solid var(--rule)}
+  .w-item:last-child{border-bottom:none}
+  .p-step{grid-template-columns:1fr;gap:10px;padding:24px 0}
+  .p-dur{text-align:left;padding-top:0}
+  .price-grid{grid-template-columns:1fr}
+  .price-item{border-right:none;border-bottom:1px solid var(--rule-mid)}
+  .price-item:last-child{border-bottom:none}
+  .footer-inner{flex-direction:column;gap:14px;text-align:center}
+  .footer-copy{text-align:center}
+  .q-options{grid-template-columns:1fr}
+
+/* ── CROSSLINKS ─────────────────────────────────── */
+.crosslinks {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--rule);
+  padding: 40px 48px;
+.crosslinks-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+.crosslinks-label {
+  font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-light); font-weight: 500; margin-right: 8px;
+.crosslink-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--white); border: 1px solid var(--rule-mid);
+  border-radius: 100px; padding: 7px 16px;
+  font-size: 13px; font-weight: 500; color: var(--ink-mid);
+  text-decoration: none; transition: border-color 0.18s, color 0.18s, background 0.18s;
+.crosslink-btn:hover {
+  border-color: var(--gold); color: var(--ink); background: #fdf8f0;
+@media (max-width: 768px) {
+  .crosslinks { padding: 28px 20px; }
+
+  .hero-h1{font-size:36px}
+  .sec-title{font-size:26px}
+  .stat-num{font-size:28px}
+  .nav-cta{display:none}
+  .price-val{font-size:36px}
+  .why-grid{grid-template-columns:1fr}
+
+@media(min-width:901px) and (max-width:1100px){
+  .hero-h1{font-size:clamp(40px,5.5vw,72px)}
+  .price-grid{grid-template-columns:1fr}
+  .process-item .p-step{grid-template-columns:140px 1fr auto}
+
+  div[style*="grid-template-columns:80px 1fr auto"]{grid-template-columns:1fr!important;gap:10px!important}
+  div[style*="grid-template-columns:repeat(2,1fr)"][style*="gap:14px"]{grid-template-columns:1fr!important}
+  div[style*="grid-template-columns:repeat(3,1fr)"][style*="gap:20px"]{grid-template-columns:1fr!important}
+
+@media (max-width: 1280px) {
+  .nav-inner { padding: 0 32px; }
+  .hero-top { padding-left: 32px !important; padding-right: 32px !important; }
+  .hero-headline-wrap { padding-left: 32px !important; padding-right: 32px !important; }
+  .hero-lower { padding-left: 32px !important; padding-right: 32px !important; }
+  .sec-inner { padding: 0 32px; }
+  .stats-row { padding: 0 32px; }
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero { min-height: auto; }
+  .hero-h1 { font-size: clamp(32px, 4vw, 52px) !important; line-height: 1.05 !important; }
+  .hero-top { padding-top: 28px !important; }
+  .hero-headline-wrap { padding-top: 16px !important; }
+  .hero-lower { padding-top: 20px !important; padding-bottom: 32px !important; }
+  .hero-sub { font-size: 15px !important; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Forma<em>.</em></a>
+    <a href="/" class="nav-back">← Все услуги</a>
+    <button class="nav-cta" onclick="openModal()">Получить предложение</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-top">
+    <p class="hero-eyebrow">Forma Studio · Разработка сайтов</p>
+    <span class="hero-niche-tag">Фитнес и спорт</span>
+  </div>
+  <div class="hero-headline-wrap">
+    <h1 class="hero-h1">Сайт тренера,<br>который работает<br><em>пока вы тренируете</em></h1>
+    <p class="hero-seo-sub">Разработка сайта для персонального тренера, фитнес-студии и спортивного клуба — с SEO и онлайн-записью, по всей России</p>
+  </div>
+  <div class="hero-lower">
+    <p class="hero-sub">Большинство тренеров теряют клиентов только потому, что <strong>их нет в поиске</strong>. Пока вы работаете с клиентами, ваш сайт привлекает новых из Яндекса и Google — без рекламного бюджета.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="openModal()">Обсудить проект →</button>
+      <span class="hero-note">Первая консультация — бесплатно</span>
+    </div>
+  </div>
+</section>
+
+<div style="border-top:1px solid var(--rule)">
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num">87+</div><div class="stat-label">проектов сдано<br>с 2015 года</div></div>
+    <div class="stat"><div class="stat-num">3.4×</div><div class="stat-label">средний рост<br>заявок за 6 мес.</div></div>
+    <div class="stat"><div class="stat-num">14 дн</div><div class="stat-label">средний срок<br>от брифа до запуска</div></div>
+    <div class="stat"><div class="stat-num">94%</div><div class="stat-label">клиентов возвращаются<br>за новым проектом</div></div>
+  </div>
+</div>
+
+
+<!-- INSIGHT -->
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">О рынке</div>
+    <h2 class="sec-title">Почему тренеру нужен сайт<br><em>а не только Instagram</em></h2>
+    <p class="sec-sub">Instagram привлекает подписчиков. Яндекс и Google привлекают клиентов которые уже готовы платить. Это разные аудитории — и работать нужно с обеими.</p>
+
+    <div style="background:var(--white);border:1px solid var(--rule);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:28px 32px;margin:40px 0">
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px">Из нашего наблюдения</div>
+      <p style="font-size:16px;color:var(--ink-mid);line-height:1.8">Человек который хочет начать тренироваться идёт в Яндекс и пишет «персональный тренер онлайн» или «фитнес-тренер [город]». Он не листает Instagram в поисках тренера — он целенаправленно ищет. <strong style="color:var(--ink)">Это горячий спрос. Если вас нет в этих результатах — клиент уходит к тому у кого есть сайт.</strong></p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px">
+      <div style="padding:28px;background:var(--bg-alt);border-radius:12px;border:1px solid var(--rule)">
+        <div style="font-family:var(--serif);font-size:36px;color:var(--gold);margin-bottom:8px">📱</div>
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:8px">Онлайн-тренинг без границ</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.6">Онлайн-формат позволяет работать с клиентами по всей России и за рубежом. Ваша аудитория не ограничена городом — SEO оптимизируем под всю страну.</p>
+      </div>
+      <div style="padding:28px;background:var(--bg-alt);border-radius:12px;border:1px solid var(--rule)">
+        <div style="font-family:var(--serif);font-size:36px;color:var(--gold);margin-bottom:8px">🎯</div>
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:8px">Ниши с низкой конкуренцией</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.6">«Тренер для мам после родов», «фитнес для людей 50+», «йога для начинающих онлайн» — нишевые запросы дают результат в поиске быстрее и приводят целевых клиентов.</p>
+      </div>
+      <div style="padding:28px;background:var(--bg-alt);border-radius:12px;border:1px solid var(--rule)">
+        <div style="font-family:var(--serif);font-size:36px;color:var(--gold);margin-bottom:8px">💰</div>
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:8px">Пассивный доход с сайта</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.6">Продажа программ тренировок и питания прямо с сайта — пассивный источник дохода. Клиент покупает пока вы ведёте сессии с другими.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОШИБКИ -->
+<section class="sec sec-alt">
+  <div class="sec-inner">
+    <div class="sec-label">Типичные ошибки</div>
+    <h2 class="sec-title">Почему сайты тренеров<br><em>не приносят клиентов</em></h2>
+    <p class="sec-sub">Одни и те же ошибки снова и снова — разбираем каждую.</p>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:32px">
+      <div style="display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:10px;align-items:flex-start">
+        <div style="font-family:var(--serif);font-size:32px;font-weight:400;color:rgba(200,169,110,0.4);line-height:1;flex-shrink:0;width:40px">01</div>
+        <div><h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:6px">Только Instagram — нет присутствия в поиске</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.65">Instagram не индексируется в Яндексе по запросу «персональный тренер онлайн». Клиент который ищет тренера через поиск вас просто не найдёт. Сайт с SEO закрывает этот канал.</p></div>
+      </div>
+      <div style="display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:10px;align-items:flex-start">
+        <div style="font-family:var(--serif);font-size:32px;font-weight:400;color:rgba(200,169,110,0.4);line-height:1;flex-shrink:0;width:40px">02</div>
+        <div><h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:6px">Нет онлайн-записи — клиент передумывает</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.65">«Напишите мне в директ» — это дополнительный шаг. Человек который настроился начать тренироваться может передумать пока ждёт ответа. Кнопка «Записаться» прямо на сайте убирает этот барьер.</p></div>
+      </div>
+      <div style="display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:10px;align-items:flex-start">
+        <div style="font-family:var(--serif);font-size:32px;font-weight:400;color:rgba(200,169,110,0.4);line-height:1;flex-shrink:0;width:40px">03</div>
+        <div><h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:6px">Нет конкретики об услугах</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.65">«Персональные тренировки» — слишком широко. Клиент хочет знать: онлайн или офлайн, специализация (похудение, сила, реабилитация, йога), формат (групповые, индивидуальные), цена пробного занятия.</p></div>
+      </div>
+      <div style="display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:10px;align-items:flex-start">
+        <div style="font-family:var(--serif);font-size:32px;font-weight:400;color:rgba(200,169,110,0.4);line-height:1;flex-shrink:0;width:40px">04</div>
+        <div><h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:6px">Нет результатов клиентов</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.65">«Минус 8 кг за 2 месяца», «избавилась от боли в спине» — это то что убеждает. Фото «до/после» с разрешения клиента, конкретные цифры и сроки работают лучше любого рекламного текста.</p></div>
+      </div>
+      <div style="display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:10px;align-items:flex-start">
+        <div style="font-family:var(--serif);font-size:32px;font-weight:400;color:rgba(200,169,110,0.4);line-height:1;flex-shrink:0;width:40px">05</div>
+        <div><h3 style="font-family:var(--serif);font-size:17px;font-weight:500;margin-bottom:6px">Сайт не адаптирован под мобильный</h3>
+        <p style="font-size:14px;color:var(--ink-mid);line-height:1.65">Тренера ищут с телефона — в спортзале, на пробежке, в перерыве. Если сайт неудобен на мобильном или медленно грузится — клиент уходит. Яндекс тоже снижает позиции медленных сайтов.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОДХОД -->
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">Наш подход</div>
+    <h2 class="sec-title">Что отличает<br><em>наш подход</em></h2>
+    <p class="sec-sub">Сайт для тренера — это инструмент записи клиентов и продажи программ, а не онлайн-визитка.</p>
+    <div class="why-grid">
+      <div class="w-item">
+        <div class="w-icon">🔍</div>
+        <h3>SEO под Яндекс и Google</h3>
+        <p>Оптимизируем под «персональный тренер онлайн», «тренер по йоге [город]», «фитнес для похудения». Нишевые запросы под вашу специализацию дают результат быстрее и приводят целевых клиентов.</p>
+      </div>
+      <div class="w-item">
+        <div class="w-icon">📅</div>
+        <h3>Онлайн-запись и расписание</h3>
+        <p>Клиент видит свободные слоты и записывается в один клик. Интегрируем виджет расписания или форму записи — для онлайн и офлайн тренировок, для групп и индивидуальных занятий.</p>
+      </div>
+      <div class="w-item">
+        <div class="w-icon">💰</div>
+        <h3>Продажа программ онлайн</h3>
+        <p>Программы тренировок, планы питания, видеокурсы — продаём прямо с сайта через российские платёжные системы. Пассивный доход который работает 24/7.</p>
+      </div>
+      <div class="w-item">
+        <div class="w-icon">📱</div>
+        <h3>Mobile-first дизайн</h3>
+        <p>Тренера ищут с телефона. Сайт оптимизирован под мобильный в первую очередь: быстро грузится, кнопка записи видна сразу, без лишних кликов до действия.</p>
+      </div>
+      <div class="w-item">
+        <div class="w-icon">🤖</div>
+        <h3>ИИ-визуалы и контент</h3>
+        <p>Нет профессиональных фото? Генерируем визуалы с помощью нейросетей. Помогаем с темами для блога — статьи о тренировках приводят информационный трафик и строят экспертность.</p>
+      </div>
+      <div class="w-item">
+        <div class="w-icon">⚡</div>
+        <h3>Запуск за 7–14 дней</h3>
+        <p>Чёткий процесс без затяжных согласований. Цена фиксирована в договоре до старта. 50% при начале, 50% при сдаче — никаких доплат.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЧЕКЛИСТ -->
+<section class="sec sec-alt">
+  <div class="sec-inner">
+    <div class="sec-label">Чек-лист</div>
+    <h2 class="sec-title">Что должно быть<br><em>на сайте тренера</em></h2>
+    <p class="sec-sub">Элементы которые конвертируют посетителя в запись или покупку программы.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:32px">
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px">👤</span>
+        <div><h4 style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Страница «О тренере»</h4><p style="font-size:13px;color:var(--ink-mid);line-height:1.5">Образование, сертификаты, специализация, личная история в спорте. Клиент выбирает тренера как человека — доверие решает.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px">📋</span>
+        <div><h4 style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Услуги с форматами</h4><p style="font-size:13px;color:var(--ink-mid);line-height:1.5">Индивидуально / группа, онлайн / офлайн, направление (йога, силовые, кардио). Каждый формат отдельно с описанием для кого подходит.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px">💰</span>
+        <div><h4 style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Цены и пакеты</h4><p style="font-size:13px;color:var(--ink-mid);line-height:1.5">«Пробная тренировка — X ₽», «абонемент 8 занятий — X ₽». Прозрачность снижает барьер записаться.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px">📅</span>
+        <div><h4 style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Онлайн-запись</h4><p style="font-size:13px;color:var(--ink-mid);line-height:1.5">Клиент выбирает время и записывается в один клик. Прямая запись повышает конверсию в 1.5–2 раза по сравнению с «напишите мне».</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px">⭐</span>
+        <div><h4 style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Результаты клиентов</h4><p style="font-size:13px;color:var(--ink-mid);line-height:1.5">Фото «до/после», конкретные достижения. «Минус 10 кг за 3 месяца» убеждает лучше любого рекламного текста.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--rule);border-radius:8px">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px">🎯</span>
+        <div><h4 style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Для кого вы работаете</h4><p style="font-size:13px;color:var(--ink-mid);line-height:1.5">Новички, мамы в декрете, 50+, после травм — чем точнее аудитория, тем выше конверсия. Узкая специализация привлекает «своего» клиента.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">Процесс работы</div>
+    <h2 class="sec-title">От брифа до<br><em>первых клиентов из поиска</em></h2>
+    <div style="display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:80px 1fr auto;gap:24px;padding:32px 0;border-top:1px solid var(--rule);align-items:start">
+        <div style="font-family:var(--serif);font-size:44px;font-weight:400;color:var(--gold);line-height:1">01</div>
+        <div><h3 style="font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px">Бриф и SEO-стратегия</h3><p style="font-size:15px;color:var(--ink-mid);line-height:1.75">Разбираем: специализация, аудитория, формат (онлайн / офлайн), что продаёте — разовые занятия, абонементы или программы. Определяем запросы под которые будем оптимизировать.</p></div>
+        <div style="font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px"><strong style="display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink)">1–2</strong>дня</div>
+      </div>
+      <div style="display:grid;grid-template-columns:80px 1fr auto;gap:24px;padding:32px 0;border-top:1px solid var(--rule);align-items:start">
+        <div style="font-family:var(--serif);font-size:44px;font-weight:400;color:var(--gold);line-height:1">02</div>
+        <div><h3 style="font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px">Тексты под SEO и вашу аудиторию</h3><p style="font-size:15px;color:var(--ink-mid);line-height:1.75">Пишем тексты которые ранжируются в Яндексе и резонируют с вашим клиентом. Описание услуг, страница «О тренере», блок результатов — всё под поисковые запросы вашей ниши.</p></div>
+        <div style="font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px"><strong style="display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink)">2–3</strong>дня</div>
+      </div>
+      <div style="display:grid;grid-template-columns:80px 1fr auto;gap:24px;padding:32px 0;border-top:1px solid var(--rule);align-items:start">
+        <div style="font-family:var(--serif);font-size:44px;font-weight:400;color:var(--gold);line-height:1">03</div>
+        <div><h3 style="font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px">Дизайн под вашу нишу</h3><p style="font-size:15px;color:var(--ink-mid);line-height:1.75">Для йоги — спокойный и атмосферный. Для силовых — энергичный и чёткий. Дизайн соответствует вашей специализации и передаёт нужное ощущение. Два раунда правок включены.</p></div>
+        <div style="font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px"><strong style="display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink)">3–4</strong>дня</div>
+      </div>
+      <div style="display:grid;grid-template-columns:80px 1fr auto;gap:24px;padding:32px 0;border-top:1px solid var(--rule);align-items:start">
+        <div style="font-family:var(--serif);font-size:44px;font-weight:400;color:var(--gold);line-height:1">04</div>
+        <div><h3 style="font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px">Разработка с онлайн-записью</h3><p style="font-size:15px;color:var(--ink-mid);line-height:1.75">Верстаем, подключаем онлайн-запись и оплату, настраиваем Schema.org, sitemap, скорость загрузки. Политика конфиденциальности по 152-ФЗ. Всё проверяем на мобильном.</p></div>
+        <div style="font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px"><strong style="display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink)">4–6</strong>дней</div>
+      </div>
+      <div style="display:grid;grid-template-columns:80px 1fr auto;gap:24px;padding:32px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);align-items:start">
+        <div style="font-family:var(--serif);font-size:44px;font-weight:400;color:var(--gold);line-height:1">05</div>
+        <div><h3 style="font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px">Запуск и индексация</h3><p style="font-size:15px;color:var(--ink-mid);line-height:1.75">Размещаем на хостинге, настраиваем Яндекс.Вебмастер и Google Search Console. По нишевым запросам первые позиции — через 3–6 недель после запуска.</p></div>
+        <div style="font-size:13px;color:var(--ink-light);text-align:right;padding-top:5px"><strong style="display:block;font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink)">1–2</strong>дня</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-alt">
+  <div class="sec-inner">
+    <div class="sec-label">Вопросы и ответы</div>
+    <h2 class="sec-title">FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Чем сайт лучше страницы в Instagram или ВКонтакте?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Соцсети не индексируются в Яндексе по запросу «персональный тренер онлайн» — там видны только сайты. Плюс алгоритмы соцсетей меняются и охваты падают — вы зависите от платформы. Сайт — ваша собственность. Два канала вместе работают лучше чем один: соцсети строят сообщество, сайт привлекает клиентов из поиска.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Работаете ли с онлайн-тренерами?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Да, и это большинство наших клиентов в этой нише. Для онлайн-тренеров особенно важен SEO без привязки к городу — оптимизируем под запросы по всей России. «Персональный тренер онлайн», «тренировки онлайн», «фитнес онлайн с тренером» — ёмкие запросы на которые мы и нацеливаемся.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Можно ли продавать программы тренировок прямо с сайта?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Да. Интегрируем оплату российскими платёжными системами — клиент покупает программу тренировок или питания прямо на сайте. Это пассивный доход: сайт продаёт пока вы ведёте занятия. Также можно продавать доступ к видеокурсам и марафонам.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Нужен ли блог на сайте тренера?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Блог значительно увеличивает органический трафик. Статьи «Как похудеть без диет», «Тренировки для начинающих», «Что есть до и после тренировки» — это информационный трафик от людей которые интересуются фитнесом. Часть из них становится клиентами. Помогаем с темами и текстами с помощью ИИ.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Что если у меня нет профессиональных фото?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Для страницы «О тренере» — подойдут хорошие фото с телефона, главное чтобы они были живыми и настоящими. Для иллюстраций и фонов генерируем ИИ-визуалы — сайт выглядит профессионально с первого дня. Позже всегда можно заменить на профессиональные фото.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Как вы работаете с клиентами из разных городов?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Полностью онлайн — созвон, переписка, демонстрация материалов. Бриф заполняете в форме, всё согласовываем через мессенджеры. Работаем с тренерами по всей России и за рубежом — офис не нужен, нужен только интернет.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-question">Сколько стоит сайт для тренера?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-bi"><p>Лендинг с онлайн-записью и расписанием — от 80 000 ₽. Многостраничный с каталогом программ и блогом — от 130 000 ₽. Стоимость фиксируется в договоре до старта. 50% предоплата, 50% при сдаче.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- СТАТЬИ -->
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">Полезные материалы</div>
+    <h2 class="sec-title">Статьи которые<br><em>помогут разобраться</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px">
+      <div style="background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:24px">
+        <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block">Фитнес · Маркетинг</span>
+        <h3 style="font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px">Как тренер получает клиентов из интернета</h3>
+        <p style="font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px">Разбор каналов: сайт, соцсети, YouTube — что работает и в каком порядке запускать.</p>
+        <a href="/blog-kak-trener-poluchaet-klientov" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:24px">
+        <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block">Разработка · Стратегия</span>
+        <h3 style="font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px">Лендинг или многостраничный — что выбрать</h3>
+        <p style="font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px">Конкретные примеры: когда достаточно лендинга, когда нужен полноценный сайт.</p>
+        <a href="/blog-lending-ili-mnogostranchnyj" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:24px">
+        <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block">SEO · Инструменты</span>
+        <h3 style="font-family:var(--serif);font-size:16px;font-weight:500;line-height:1.35;margin-bottom:8px">Как проверить SEO сайта самостоятельно</h3>
+        <p style="font-size:13px;color:var(--ink-mid);line-height:1.55;margin-bottom:14px">Яндекс.Вебмастер, PageSpeed и другие бесплатные инструменты — что конкретно смотреть.</p>
+        <a href="/blog-kak-proverit-seo-sajta" style="font-size:13px;font-weight:600;color:var(--gold)">Читать статью →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">Forma<em>.</em></a>
+    <p class="footer-copy">© 2026 ООО «АКБ» · ИНН 7743458940 · ОГРН 1247700690027<br>125413, г. Москва, ул. Фестивальная, д. 46, к. 1, оф. 77</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="q1">
+      <div class="q-progress"><div class="q-bar" style="width:50%"></div></div>
+      <div class="q-step-label">Шаг 1 из 2</div>
+      <h2 class="modal-title">Что нужно сделать?</h2>
+      <p class="modal-sub">Выберите — подберём решение</p>
+      <div class="q-options">
+        <button class="q-opt" onclick="pickQ1(this,'Новый сайт с нуля')">🆕 Новый сайт</button>
+        <button class="q-opt" onclick="pickQ1(this,'Редизайн существующего')">🔄 Редизайн</button>
+        <button class="q-opt" onclick="pickQ1(this,'SEO-продвижение')">🔍 SEO</button>
+        <button class="q-opt" onclick="pickQ1(this,'Нужна консультация')">💬 Консультация</button>
+      </div>
+    </div>
+    <div id="q2" style="display:none">
+      <div class="q-progress"><div class="q-bar" style="width:100%"></div></div>
+      <div class="q-step-label">Шаг 2 из 2</div>
+      <h2 class="modal-title">Как с вами связаться?</h2>
+      <p class="modal-sub">Пришлём расчёт стоимости в течение 2 часов</p>
+      <form id="mf" action="https://formspree.io/f/mbdvdyjw" method="POST">
+        <input type="hidden" name="type" id="mf-type">
+        <input type="hidden" name="page" value="trener">
+        <div class="form-field"><label>Имя</label><input type="text" name="name" placeholder="Александр" required></div>
+        <div class="form-field"><label>Телефон или Telegram</label><input type="text" name="contact" placeholder="+7 (___) ___-__-__ или @username" required></div>
+        <div class="form-field"><label>Комментарий</label><textarea name="message" placeholder="Любые детали..."></textarea></div>
+        <button type="submit" class="form-submit" id="mfsub">Получить расчёт →</button>
+        <div id="mfsuc" style="display:none;margin-top:14px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:14px;color:#166534">✓ Заявка отправлена! Свяжемся в течение 2 часов.</div>
+        <div id="mferr" style="display:none;margin-top:14px;padding:12px;background:#fff1f2;border:1px solid #fecdd3;border-radius:8px;font-size:14px;color:#9f1239">Ошибка. Напишите напрямую: info@umniy-site.ru</div>
+        <p class="form-legal">Нажимая кнопку, вы соглашаетесь с <a href="/privacy" style="text-decoration:underline">политикой конфиденциальности</a></p>
+      </form>
+      <div class="modal-div">или напишите сразу</div>
+      <div class="msg-row">
+        <a href="https://wa.me/79167347616" target="_blank" class="msg-btn"><span class="msg-icon">💬</span><span class="msg-label">WhatsApp</span></a>
+        <a href="https://t.me/infoaccount1" target="_blank" class="msg-btn"><span class="msg-icon">✈️</span><span class="msg-label">Telegram</span></a>
+        <a href="https://max.ru/u/f9LHodD0cOJMljii30kmK_I7b7kl1EVYlgeqFakC1pg5P0mLhhb8MbMosCQ" target="_blank" class="msg-btn"><span class="msg-icon">💙</span><span class="msg-label">Max</span></a>
+        <a href="mailto:info@umniy-site.ru" class="msg-btn"><span class="msg-icon">✉️</span><span class="msg-label">Email</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(){document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow='';document.getElementById('q1').style.display='block';document.getElementById('q2').style.display='none'}
+function closeModalOutside(e){if(e.target===document.getElementById('modal'))closeModal()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()})
+function pickQ1(btn,val){
+  btn.closest('.q-options').querySelectorAll('.q-opt').forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected');
+  document.getElementById('mf-type').value=val;
+  setTimeout(()=>{document.getElementById('q1').style.display='none';document.getElementById('q2').style.display='block'},280)
+}
+const mf=document.getElementById('mf');
+if(mf){mf.addEventListener('submit',async e=>{
+  e.preventDefault();const sb=document.getElementById('mfsub');sb.textContent='Отправляем...';sb.disabled=true;
+  document.getElementById('mfsuc').style.display='none';document.getElementById('mferr').style.display='none';
+  try{const r=await fetch(mf.action,{method:'POST',body:new FormData(mf),headers:{'Accept':'application/json'}});
+  if(r.ok){document.getElementById('mfsuc').style.display='block';mf.reset();sb.textContent='Отправлено ✓'}
+  else throw new Error()}catch{document.getElementById('mferr').style.display='block';sb.textContent='Получить расчёт →';sb.disabled=false}
+})}
+function toggleFaq(btn){const item=btn.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));if(!isOpen)item.classList.add('open')}
+
+// Yandex Metrika
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113672601','ym');
+ym(113672601,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+</script>
+</body>
+</html>
