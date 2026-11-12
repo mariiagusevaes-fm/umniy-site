@@ -36,31 +36,16 @@ rsync -a --exclude='.git' --exclude='.ftp-credentials*' --exclude='.DS_Store' \
   "$SCRIPT_DIR/" "$WORKTREE/"
 
 cd "$WORKTREE"
+# ВАЖНО: на GitHub Pages файл name.html имеет приоритет над name/index.html
+# при обращении к чистому адресу /name — поэтому оставлять одновременно и
+# заглушку name.html, и папку name/ НЕЛЬЗЯ, это ломает уже проиндексированные
+# чистые адреса (стр. "name.html" начинает перехватывать "/name").
+# Поэтому просто переносим файл в папку, без заглушки на старом .html-адресе.
 for f in *.html; do
   if [ "$f" != "index.html" ]; then
     name="${f%.html}"
     mkdir -p "$name"
-    title="$(grep -o '<title>[^<]*</title>' "$f" | head -1 | sed 's/<[^>]*>//g')"
     mv "$f" "$name/index.html"
-    # GitHub Pages не умеет server-side редиректы (.htaccess не работает) —
-    # оставляем на старом .html-адресе статическую заглушку с мгновенным
-    # meta-refresh и canonical на чистый адрес, чтобы Google не получал 404
-    # по старым индексированным .html-ссылкам.
-    cat > "$f" <<STUB
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://umniy-site.ru/$name">
-<meta http-equiv="refresh" content="0; url=/$name">
-<title>${title:-Страница перемещена}</title>
-</head>
-<body>
-<p>Эта страница переехала на <a href="/$name">umniy-site.ru/$name</a>.</p>
-</body>
-</html>
-STUB
   fi
 done
 
