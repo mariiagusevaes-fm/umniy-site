@@ -2609,17 +2609,24 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // Animate stat numbers
-function animateCounter(el, target, suffix = '') {
-  const isDecimal = target % 1 !== 0;
-  let start = 0;
-  const step = target / 60;
-  const timer = setInterval(() => {
-    start += step;
-    if (start >= target) { start = target; clearInterval(timer); }
-    el.querySelector('.stat-num').textContent = isDecimal
-      ? start.toFixed(1) + suffix
-      : Math.floor(start) + suffix;
-  }, 16);
+function animateCounter(el) {
+  const numEl = el.querySelector('.stat-num');
+  const m = numEl.textContent.trim().match(/^(\d+(?:\.\d+)?)(.*)$/);
+  if (!m) return;
+  const target = parseFloat(m[1]);
+  const suffix = m[2];
+  const isDecimal = m[1].indexOf('.') !== -1;
+  const duration = 900;
+  let startTime = null;
+  function step(ts) {
+    if (!startTime) startTime = ts;
+    const progress = Math.min((ts - startTime) / duration, 1);
+    const current = target * progress;
+    numEl.textContent = (isDecimal ? current.toFixed(1) : Math.floor(current)) + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+    else numEl.textContent = (isDecimal ? target.toFixed(1) : target) + suffix;
+  }
+  requestAnimationFrame(step);
 }
 
 // Formspree AJAX submit
@@ -2661,7 +2668,7 @@ if (form) {
 const statsObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
+      animateCounter(entry.target);
       statsObserver.unobserve(entry.target);
     }
   });
