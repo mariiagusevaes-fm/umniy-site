@@ -32,7 +32,7 @@ find "$WORKTREE" -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
 # Копируем всё, кроме служебных файлов
 rsync -a --exclude='.git' --exclude='.ftp-credentials*' --exclude='.DS_Store' \
   --exclude='deploy.sh' --exclude='deploy-github.sh' --exclude='SEO-аудит.md' \
-  --exclude='.gitignore' \
+  --exclude='.gitignore' --exclude='*.jpeg' \
   "$SCRIPT_DIR/" "$WORKTREE/"
 
 cd "$WORKTREE"
