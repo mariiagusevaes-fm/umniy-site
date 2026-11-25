@@ -398,6 +398,8 @@ section, .hero, .hero-stats, footer { max-width: 100vw; overflow-x: hidden; }
 }
 .ai-bar[style*="translateY(-100%)"] { pointer-events: none; }
 .ai-bar strong { font-weight: 600; color: var(--gold); }
+.ai-bar-short { display: none; }
+.eyebrow-short, .slots-short { display: none; }
 .ai-bar-inner {
   display: flex; align-items: center; justify-content: center;
   gap: 10px; flex-wrap: wrap;
@@ -1406,18 +1408,27 @@ section, .hero, .hero-stats, footer { max-width: 100vw; overflow-x: hidden; }
   section.sec { padding: 56px 0; }
 
   /* Hero */
+  .ai-bar-full { display: none; }
+  .ai-bar-short { display: inline; }
   .hero { padding-top: 100px; }
   .hero-top {
-    padding: 32px 20px 0;
-    flex-direction: column; gap: 12px;
+    padding: 16px 20px 0 !important;
+    flex-direction: column; gap: 4px;
   }
   .hero-meta { align-items: flex-start; }
-  .hero-headline-wrap { padding: 28px 20px 0; }
-  .hero-headline { font-size: clamp(38px, 10vw, 60px); }
+  .eyebrow-full, .slots-full { display: none; }
+  .eyebrow-short, .slots-short { display: inline; }
+  .hero-headline-wrap { padding: 6px 20px 0 !important; }
+  .hero-headline { font-size: clamp(28px, 8.5vw, 40px); line-height: 1.0; }
+  .hero-headline br.br-desktop-only { display: none; }
+  .hero-seo-sub { margin-top: 4px; line-height: 1.35; }
   .hero-lower {
-    padding: 32px 20px 48px;
-    flex-direction: column; gap: 28px;
+    padding: 8px 20px 24px !important;
+    flex-direction: column; gap: 10px;
   }
+  .hero-sub { font-size: 14px; line-height: 1.4; }
+  .hero-actions { gap: 10px; }
+  .btn-primary { padding: 14px 28px; }
   .hero-actions { align-items: stretch; width: 100%; }
   .btn-primary { width: 100%; text-align: center; }
 
@@ -1562,7 +1573,8 @@ section, .hero, .hero-stats, footer { max-width: 100vw; overflow-x: hidden; }
 <div class="ai-bar">
   <div class="ai-bar-inner">
     <span class="ai-dot"></span>
-    <span>Создаём сайты, мобильные приложения, контент и визуалы с применением <strong>самых современных нейросетей</strong> — быстрее, точнее и с результатом, который сложно повторить вручную</span>
+    <span class="ai-bar-full">Создаём сайты, мобильные приложения, контент и визуалы с применением <strong>самых современных нейросетей</strong> — быстрее, точнее и с результатом, который сложно повторить вручную</span>
+    <span class="ai-bar-short">Сайты и приложения с применением <strong>нейросетей</strong> — быстрее и точнее</span>
   </div>
 </div>
 
@@ -1587,17 +1599,17 @@ section, .hero, .hero-stats, footer { max-width: 100vw; overflow-x: hidden; }
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-top">
-    <p class="hero-eyebrow">Студия цифровых продуктов · Москва и Барселона</p>
+    <p class="hero-eyebrow"><span class="eyebrow-full">Студия цифровых продуктов · Москва и Барселона</span><span class="eyebrow-short">Студия цифровых продуктов</span></p>
     <div class="hero-meta">
       <span>Работаем с 2015 года</span>
-      <strong class="hero-slots">🟡 Берём 2 проекта в ноябре — 1 место занято</strong>
+      <strong class="hero-slots"><span class="slots-full">🟡 Берём 2 проекта в ноябре — 1 место занято</span><span class="slots-short">🟡 1 место в ноябре</span></strong>
     </div>
   </div>
 
   <div class="hero-headline-wrap reveal">
     <h1 class="hero-headline">
       Сайты,<br>
-      которые<br>
+      которые<br class="br-desktop-only">
       <em>зарабатывают</em>
     </h1>
     <p class="hero-seo-sub">Разработка сайтов и мобильных приложений с SEO и ИИ под ключ — для малого бизнеса в России и русскоязычных предпринимателей в Испании</p>
@@ -1739,25 +1751,25 @@ section, .hero, .hero-stats, footer { max-width: 100vw; overflow-x: hidden; }
 
     <div class="case-row reveal">
       <div class="case-col">
-        <span class="case-tag-small">Финансы · Новая ниша · Идея + реализация с нуля</span>
-        <h3>kredit-posle-bankrotstva.ru — программа восстановления кредитной истории</h3>
-        <p>Ещё одна наша идея: ниша существовала, но никто не создал под неё нормального сайта. Сложная аудитория — люди после банкротства, которые не доверяют никому. Построили структуру доверия: квиз-калькулятор срока восстановления, блок гарантий в договоре, истории клиентов. Охват — 47 регионов России.</p>
-        <a href="https://kredit-posle-bankrotstva.ru" target="_blank" rel="noopener" class="case-link-btn">Открыть сайт →</a>
+        <span class="case-tag-small">Медицина · Уход на дому · Экстренная помощь</span>
+        <h3>bez-prolejnei.ru — выездная хирургическая помощь при пролежнях на дому</h3>
+        <p>Сайт для сервиса, где решение принимают в состоянии стресса — родственники лежачего больного ищут помощь срочно и не могут позволить себе ошибиться с выбором. Структура строится на доверии: лицензия с 2010 года, врачи с опытом в гнойной хирургии от 15 лет, выезд в день обращения по Москве и области, круглосуточно и без выходных. Отдельно — витрина средств ухода с открытыми ценами, от противопролежневых матрасов до перевязочных материалов.</p>
+        <a href="https://bez-prolejnei.ru" target="_blank" rel="noopener" class="case-link-btn">Открыть сайт →</a>
       </div>
       <div class="case-col">
-        <div class="case-metric-label">Регионов охвата</div>
-        <div class="case-metric-val gold">47</div>
-        <div class="case-metric-sub">вся Россия · удалённая работа</div>
+        <div class="case-metric-label">Опыт врачей</div>
+        <div class="case-metric-val gold">15+ лет</div>
+        <div class="case-metric-sub">гнойная хирургия, высшая категория</div>
       </div>
       <div class="case-col">
-        <div class="case-metric-label">Программ завершено</div>
-        <div class="case-metric-val">200+</div>
-        <div class="case-metric-sub">клиентов прошли программу</div>
+        <div class="case-metric-label">Регион охвата</div>
+        <div class="case-metric-val">Москва и МО</div>
+        <div class="case-metric-sub">выезд в день обращения</div>
       </div>
       <div class="case-col">
-        <div class="case-metric-label">Формат работы</div>
-        <div class="case-metric-val">с нуля</div>
-        <div class="case-metric-sub">идея, структура, запуск — наши</div>
+        <div class="case-metric-label">Лицензия</div>
+        <div class="case-metric-val">с 2010</div>
+        <div class="case-metric-sub">круглосуточно, без выходных</div>
       </div>
     </div>
 
@@ -2579,6 +2591,7 @@ function applyOffsets() {
 }
 applyOffsets();
 window.addEventListener('resize', applyOffsets, { passive: true });
+if (document.fonts && document.fonts.ready) { document.fonts.ready.then(applyOffsets); }
 
 window.addEventListener('scroll', () => {
   const barH = aiBar.offsetHeight;
